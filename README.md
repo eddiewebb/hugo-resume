@@ -4,6 +4,12 @@ Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-over
 
 This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project pages allowed more detail.
 
+![Sample](images/about.png)
+
+![Sample](images/skills.png)
+
+![Sample](images/projects.png)
+
 See [Eddie's site](https://edwardawebb.com) for a live example.
 
 ## Setup & Use
