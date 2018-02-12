@@ -1,0 +1,14 @@
+# Support move of old blog to subdomain.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  # /portfolio was a page in blog, but now its this site!
+  RewriteRule ^portfolio / [L,R=301]
+  #everything else should go to new blog URL
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ https://blog.edwardawebb.com/$1 [L,QSA,R=301]
+
+  #force SSL
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+</IfModule>

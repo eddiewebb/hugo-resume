@@ -1,0 +1,20 @@
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+  <div class="my-auto" id="projects-content">
+    <h2 class="mb-5">Projects</h2>
+          <h2 class="mb-5">{{ $.Scratch.Get "heading" }}</h2>
+          {{ range where (where .Site.Pages "Section" "projects") ".Params.tags" "!=" nil }}
+              <h3><a href="{{.Permalink}}">{{ .Title }}</a></h3>
+              <p>{{ .Description | safeHTML }}<p>
+              {{with  .Params.image }}
+                  <img src="{{ . }}" style="max-height:300px;max-width:80%;"/>
+              {{ end }}
+              {{ with .Params.fact }}<p class="project-fact">{{ . }}</p>{{ end }}
+              <p><a href="{{.Permalink}}">Read more..</a></p>
+              <ul class="tags">
+                  {{ range  .Params.tags }}
+                    <li><a class="tag">{{ . }}</a></li>
+                  {{ end }}
+              </ul>
+          {{ end }}
+  </div>
+</section>

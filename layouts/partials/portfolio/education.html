@@ -1,0 +1,17 @@
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+          <div class="my-auto">
+            <h2 class="mb-5">Education</h2>
+            {{ range .Site.Data.education }}
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h3 class="mb-0">{{ .school }}</h3>
+                  <div class="subheading mb-3">{{ .degree }}</div>
+                  <div>{{ .major }}</div>
+                </div>
+                <div class="resume-date text-md-right">
+                  <span class="text-primary">{{ .range }}</span>
+                </div>
+              </div>
+              {{ end }}
+           </div>
+        </section>

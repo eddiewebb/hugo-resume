@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">{{ .Title }}</span></h2>
+    <p>{{ .Content }}</p>
+    {{ with .Params.contributionUrl }}<p>Project link: <a href="{{ . }}">{{ . }}</a></p>{{ end }}
+    {{ with .Params.image }}<img src="{{ . }}" style="max-width:80%;"/>{{ end }}
+    <ul class="tags">
+        {{ range  .Params.tags }}
+          <li><a class="tag">{{ . }}</a></li>
+        {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

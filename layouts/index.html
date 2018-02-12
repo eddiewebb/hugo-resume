@@ -1,0 +1,23 @@
+{{ define "main" }}
+   {{ partial "about.html" .}}
+   {{ if .Site.Params.showSkills }}
+       {{ partial "portfolio/skills.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showProjects }}
+      {{ partial "portfolio/projects.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showOpenSource }}
+       {{ partial "portfolio/contributions.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showPublications }}
+       {{ partial "portfolio/publications.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showExperience }}
+       {{ partial "portfolio/experience.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showEducation }}
+       {{ partial "portfolio/education.html" . }}
+   {{ end }}
+
+  <span style="color: #999999; font-size: 60%;">Nifty tech tag formats from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a>  @ https://codepen.io/wbeeftink/pen/dIaDH</span>
+{{ end }}

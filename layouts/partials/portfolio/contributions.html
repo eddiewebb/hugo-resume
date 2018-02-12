@@ -1,0 +1,19 @@
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="open">
+  <div class="my-auto" id="contributions-content">
+      <h2 class="mb-5">Open Source Contributions</h2>
+      {{ range .Site.Data.contributions }}
+          <h3>{{ .name }}</h3>
+          <h5><a href="{{ .link }}">{{ .link }}</a></h5>
+          <p>{{ .summary | safeHTML }}<p>
+          {{if  .image }}
+              <img src="{{ .image }}" style="max-height:300px;"/>
+          {{ end }}
+          <span class="project-fact">{{ .fact }}</span>
+          <ul class="tags">
+              {{ range  .tags }}
+                <li><a class="tag">{{ . }}</a></li>
+              {{ end }}
+          </ul>
+      {{ end }}
+  </div>
+</section>
