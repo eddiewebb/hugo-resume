@@ -18,6 +18,9 @@ This theme uses a combination of a custom archetype `projects` and some data fil
 
 You can test the provided [exampleSite](exampleSite) after cloning with the command: `cd exampleSite;hugo -t hugo-resume --themesDir ../.. server` and visiting localhost:1313 on your machine.
 
+### Summary
+Edit the main `contents/_index.md with a brief bio/summary`
+
 ### Data files
 Data files are used for simple content presented on the homepage.
 
