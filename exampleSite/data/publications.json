@@ -16,16 +16,6 @@
         "link":"https://blog.edwardawebb.com/web-development/cakephp/started-acl-cakephp",
         "image":"img/cakephp-acls.png",
         "tags":["Technical Writing","PHP","CakePHP"]
-    },
-    {
-        "name":"The 3-legged stool of enterprise cloud adoption",
-        "type":"Thought Article",
-        "date":"December, 2017",
-        "summary":"My team is at the heart of that journey providing the major platforms and tooling that support/enable cloud adoption. But providing tools is never enough, and I’ve been using the analogy of a 3-legged stool to convey this challenge across our company. It’s been a successful model for us, teams using our enterprise pipelines have shifted about 80% of their workloads to one of our strategic cloud targets.",
-        "link":"https://medium.com/@edwardawebb/the-3-legged-stool-of-enterprise-cloud-adoption-b16db3fba97d",
-        "image":"img/cloudratios.png",
-        "tags":["Enterprise Technology","Culture","Cloud","Training"]
     }
-
 
 ]

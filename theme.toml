@@ -7,7 +7,7 @@ licenselink = "https://github.com/eddiewebb/hugo-resume/blob/master/LICENSE.md"
 description = "Ported from StartBootstrap 'Resume' theme"
 homepage = "https://edwardwebb.com/"
 tags = ["portfolio","resume"]
-features = []
+features = ["social","mobile"]
 min_version = "0.1"
 
 [author]

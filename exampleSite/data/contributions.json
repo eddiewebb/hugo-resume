@@ -1,27 +1,11 @@
 [
     {
-        "name":"Atlassian Deployment Triggers",
-        "link":"https://bitbucket.org/atlassianlabs/bamboo-after-deployment-trigger/pull-requests/2/fixes-issue-2-eliminate/diff",
-        "image":"img/deploysonly.gif",
-        "summary":"Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.",
-        "tags":["Java","jQuery","REST APIs","Bamboo","JSON"],
-        "fact":""
-    },
-    {
         "name":"Added Docker Build Status Badge to shields.io",
         "link":"https://github.com/badges/shields/pull/856",
         "image":"https://img.shields.io/docker/build/eddiewebb/bitbucket-pipelines-marketplace.svg?style=plastic",
         "summary":"Shields.io is a massive library of badges that can be inserted into project README's or websites displaying various statuses (code coverage, health, version, etc).  Support for docker was missing the current build health, and was a pretty trivial addition.",
         "tags":["Docker","Rest APIs","JavaScript","node.js","JSON"],
         "fact":""
-    },
-    {
-        "name":"Enterprise SSH Key Management for Bitbucket",
-        "link":"https://github.com/libertymutual/ssh-key-enforcer-stash",
-        "image":"/img/bitbucket-keys.png",
-        "summary":"The use of SSH keypairs to authenticate against git repos is standard fair for most developers. But company security policy threatened to block this functionality as the concern of non-expiring secrets was a strict no-no in the enterprise environment. We needed a solution to track and rotate the keyspairs assigned to developers, and ensure that no single key was alive more than 30 days, and also enforce that there was never more than 1 valid key per developer. This contribution required understanding of SSH crypto funtionality, Bitbucket's event architecture to augment the vendor's base offering.  The solution seemed valuable to a broader audidence, so I worked through company process to open source the solution, enabling other companies to enforces key rotation and expiry policies for their users and repositories in Atlassian bitbucket.",
-        "tags":["Java","Bitbucket","Security"],
-        "fact":"Companies can specify the tolerated age for key expiry/deletion, and users are notified by email to create a new pair."
     },
     {
         "name":"Schema.org Structured Data documentation fixes",
@@ -31,7 +15,4 @@
         "tags":["JSON"],
         "fact":"Schema.org provides a common specification for Structured Data on the internet."
     }
-
-
-
 ]
