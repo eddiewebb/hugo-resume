@@ -21,11 +21,11 @@ You can test the provided [exampleSite](exampleSite) after cloning with the comm
 ### Data files
 Data files are used for simple content presented on the homepage.
 
-- [data/skills.js](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/skills.js)
-- [data/contributions.js](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/contributions.js)
-- [data/experience.js](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/experience.js)
-- [data/education.js](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/education.js)
-- [data/publications.js](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/publications.js)
+- [data/skills.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/skills.json)
+- [data/contributions.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/contributions.json)
+- [data/experience.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/experience.json)
+- [data/education.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/education.json)
+- [data/publications.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/publications.json)
 
 ### projects
 Initially projects were in their own JSON file too, but I decided I wanted to allow more detail and custom formatting.
