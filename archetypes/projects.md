@@ -6,4 +6,6 @@ tags: ["techtags","used","in","website"]
 image: ""
 contributionUrl: "URL linked from project details page"
 fact: "Interesting little tidbit shown below image on summary and detail page"
+sitemap:
+  priority : 0.8
 ---
