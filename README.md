@@ -55,6 +55,10 @@ All personal information outside the above details is captured by params in [`co
     showExperience = true
     showEducation = true
 
+    # do you want to show git hash on page footer and link to repo? Add commit URl for repo here.
+    gitCommitPrefix = "https://github.com/YOURNAME/REPONAME/commit/"
+
+
 [[params.handles]]
     name = "LinkedIn"
     link = "https://www.linkedin.com/in/edwardwebb/"
