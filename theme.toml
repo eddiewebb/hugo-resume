@@ -4,10 +4,10 @@
 name = "Resume"
 license = "MIT"
 licenselink = "https://github.com/eddiewebb/hugo-resume/blob/master/LICENSE.md"
-description = "Ported from StartBootstrap 'Resume' theme"
+description = "Personal resume with social handles, skills inventory, and work history . Ported from StartBootstrap 'Resume' theme"
 homepage = "https://edwardwebb.com/"
 tags = ["portfolio","resume"]
-features = ["social","mobile"]
+features = ["social","mobile","projects"]
 min_version = "0.1"
 
 [author]

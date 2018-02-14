@@ -1,4 +1,4 @@
-baseURL = "https://edwardawebb.com/"
+baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "Eddie Webb"
 theme = "resume"

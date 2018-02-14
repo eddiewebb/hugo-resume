@@ -4,11 +4,11 @@ Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-over
 
 This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project pages allowed more detail.
 
-![Sample](images/about.png)
+![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/about.png)
 
-![Sample](images/skills.png)
+![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/skills.png)
 
-![Sample](images/projects.png)
+![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/projects.png)
 
 See [Eddie's site](https://edwardawebb.com) for a live example.
 
@@ -16,15 +16,19 @@ See [Eddie's site](https://edwardawebb.com) for a live example.
 
 This theme uses a combination of a custom archetype `projects` and some data files to drive content.
 
+You can test the provided [exampleSite](exampleSite) after cloning with the command: `cd exampleSite;hugo -t hugo-resume --themesDir ../.. server` and visiting localhost:1313 on your machine.
+
+### Summary
+Edit the main `contents/_index.md with a brief bio/summary`
 
 ### Data files
 Data files are used for simple content presented on the homepage.
 
-[data/skills.js](exampleSite/data/skills.js)
-[data/contributions.js](exampleSite/data/contributions.js)
-[data/experience.js](exampleSite/data/experience.js)
-[data/education.js](exampleSite/data/education.js)
-[data/publications.js](exampleSite/data/publications.js)
+- [data/skills.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/skills.json)
+- [data/contributions.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/contributions.json)
+- [data/experience.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/experience.json)
+- [data/education.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/education.json)
+- [data/publications.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/publications.json)
 
 ### projects
 Initially projects were in their own JSON file too, but I decided I wanted to allow more detail and custom formatting.
@@ -32,7 +36,7 @@ Projects are added with `hugo add projects/name-of-project.html`
 
 ### Template params
 
-All personal information outside the above details is captured by params in [`config.toml`](exampleSite/config.toml)
+All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml)
 
 ```
 [params]
