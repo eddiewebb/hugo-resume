@@ -4,20 +4,19 @@
     {{ range $.Site.Data.skills }}
         <div class="subheading mb-3 skills-heading">{{ .grouping }}</div>
             <ul>
-
-        {{ range .skills }}
-            {{ if isset . "name" }}
-                <li class="list-inline-item">
-                  <i class="devicons devicons-{{ cond (in $.Site.Data.devicons (lower .name)) (lower .name) "terminal_badge" }}"></i>
-                  <a href="{{.link}}">{{ .name }}</a>
-                </li>
-            {{ else }}
-              <li class="list-inline-item">
-                <i class="devicons devicons-{{ cond (in $.Site.Data.devicons (lower .)) (lower .) "terminal_badge" }}"></i>
-                {{ . }}
-              </li>
+            {{ range .skills }}
+                {{ if isset . "name" }}
+                    <li class="list-inline-item">
+                      <i class="devicons devicons-{{ cond (in $.Site.Data.devicons (lower .name)) (lower .name) "terminal_badge" }}"></i>
+                      <a href="{{.link}}">{{ .name }}</a>
+                    </li>
+                {{ else }}
+                  <li class="list-inline-item">
+                    <i class="devicons devicons-{{ cond (in $.Site.Data.devicons (lower .)) (lower .) "terminal_badge" }}"></i>
+                    {{ . }}
+                  </li>
+                {{ end }}
             {{ end }}
-        {{ end }}
             </ul>
     {{ end }}
   </div>
