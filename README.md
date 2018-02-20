@@ -43,6 +43,7 @@ All personal information outside the above details is captured by params in [`co
     firstName = "Eddie"
     lastName = "Webb"
     address = "Rollinsford, NH"
+    profileImage = "img/me.png"
     email = "email@domain.com"
     description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
     favicon = "images/favicon.ico"
