@@ -1,8 +1,0 @@
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="open">
-  <div class="my-auto" id="contributions-content">
-      <h2 class="mb-5">Open Source Contributions</h2>
-      {{ range where (where .Site.Pages "File.Dir" "projects/contributions/") ".Params.tags" "!=" nil }}
-          {{ partial "portfolio/projectSummary" .  }}
-      {{ end }}
-  </div>
-</section>

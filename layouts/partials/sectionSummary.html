@@ -1,0 +1,9 @@
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="{{ .Scratch.Get "sectionId" }}">
+  <div class="my-auto" id="projects-content">
+    <h2 class="mb-5"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Content }}</p>
+    {{ range .Pages }}
+        {{ partial "portfolio/projectSummary" . }}
+    {{ end }}
+  </div>
+</section>

@@ -4,10 +4,16 @@
        {{ partial "portfolio/skills.html" . }}
    {{ end }}
    {{ if .Site.Params.showProjects }}
-      {{ partial "portfolio/projects.html" . }}
+      {{ with .Site.GetPage "section" "projects/creations" }}
+         {{ .Scratch.Add "sectionId" "projects" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
    {{ end }}
    {{ if .Site.Params.showOpenSource }}
-       {{ partial "portfolio/contributions.html" . }}
+      {{ with .Site.GetPage "section" "projects/contributions" }}
+         {{ .Scratch.Add "sectionId" "open" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
    {{ end }}
    {{ if .Site.Params.showPublications }}
        {{ partial "portfolio/publications.html" . }}

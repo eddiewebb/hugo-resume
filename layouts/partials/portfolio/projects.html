@@ -1,8 +1,0 @@
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-  <div class="my-auto" id="projects-content">
-    <h2 class="mb-5">Projects</h2>
-    {{ range where (where .Site.Pages "File.Dir" "projects/creations/") ".Params.tags" "!=" nil }}
-        {{ partial "portfolio/projectSummary" . }}
-    {{ end }}
-  </div>
-</section>
