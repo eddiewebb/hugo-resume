@@ -1,19 +1,8 @@
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="open">
   <div class="my-auto" id="contributions-content">
       <h2 class="mb-5">Open Source Contributions</h2>
-      {{ range .Site.Data.contributions }}
-          <h3>{{ .name }}</h3>
-          <h5><a href="{{ .link }}">{{ .link }}</a></h5>
-          <p>{{ .summary | safeHTML }}</p>
-          {{ with .image }}
-              <img src="{{ . }}" style="max-height:300px;max-width:90%;" />
-          {{ end }}
-          <span class="project-fact">{{ .fact }}</span>
-          <ul class="tags">
-              {{ range  .tags }}
-                <li><a class="tag">{{ . }}</a></li>
-              {{ end }}
-          </ul>
+      {{ range where (where .Site.Pages "File.Dir" "projects/contributions/") ".Params.tags" "!=" nil }}
+          {{ partial "portfolio/projectSummary" .  }}
       {{ end }}
   </div>
 </section>
