@@ -2,9 +2,17 @@
 {{ partial "breadcrumbs" . }}
 <section class="resume-section p-3 p-lg-5 d-flex flex-column">
   <div class="my-auto" id="projects-content">
-    {{ .Content }}
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Content }}</p>
     {{ range .Data.Pages }}
         {{ partial "portfolio/projectSummary" . }}
+    {{ end }}
+    {{ range .Sections }}
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Content }}</p>
+      {{ range .Pages }}
+        {{ partial "portfolio/projectSummary" . }}
+      {{ end }}
     {{ end }}
   </div>
 </section>
