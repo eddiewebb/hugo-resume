@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ partial "breadcrumbs" . }}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+  <div class="my-auto" id="projects-content">
+    <h1 id="{{ urlize .Title }}">{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+    {{ range .Data.Pages }}
+        {{ partial (printf "%s%s" .Section "Summary") . }}
+    {{ end }}
+    {{ range .Sections }}
+      <h2 id="{{ urlize .Title }}"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Content }}</p>
+      {{ range .Pages }}
+        {{ partial (printf "%s%s" .Section "Summary") . }}
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
