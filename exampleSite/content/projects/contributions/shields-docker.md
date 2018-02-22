@@ -5,6 +5,7 @@
     "description":"Added a shield for Docker Hub builds indicating state of last build",
     "tags":["Docker","Rest APIs","JavaScript","node.js","JSON"],
     "fact":"",
+    "featured":true,
     "weight":"500",
     "sitemap": {"priority" : "0.8"}
 }

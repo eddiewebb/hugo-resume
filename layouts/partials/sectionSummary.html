@@ -2,8 +2,15 @@
   <div class="my-auto" id="projects-content">
     <h2 class="mb-5"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <p>{{ .Content }}</p>
-    {{ range .Pages }}
+    {{ $featuredPages := where .Pages "Params.featured" true }}
+    {{ range $featuredPages }}
         {{ partial "portfolio/projectSummary" . }}
     {{ end }}
   </div>
+  {{ if gt .Pages $featuredPages }}
+    <div class="my-auto">
+      <h3>Wait! There's more..</h3>
+      <p>See <a href="{{ .Permalink }}">all {{ .Title | pluralize }}</a> for more examples!</p>
+    </div>
+  {{ end }}
 </section>
