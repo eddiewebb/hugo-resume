@@ -1,8 +1,15 @@
-<h3><a href="{{.Permalink}}">{{ .Title }}</a></h3>
-<p>{{ .Description | safeHTML }}<p>
-{{with  .Params.image }}
-  <img src="{{ . }}" style="max-height:300px;max-width:90%;"/>
-{{ end }}
-{{ with .Params.fact }}<p class="project-fact">{{ . }}</p>{{ end }}
-<p><a href="{{.Permalink}}">Read more..</a></p>
-{{ partial "techtags" . }}
+
+<h3 class="mb-3">{{ .Title }}</h3>
+<div class="resume-item d-flex flex-column flex-md-row mb-3">
+
+  <div class="resume-content " style="width:200px;!important;">
+    {{with  .Params.image }}
+      <img src="{{ . }}" style="max-height:150px;max-width:150px;"/>
+    {{ end }}
+  </div>
+  <div class="resume-date">
+    <p>{{ .Description | safeHTML }}<p>
+    <p class><a href="{{.Permalink}}">Read more..</a></p>
+  </div>
+</div>
+<div>{{ partial "techtags" . }}</div>
