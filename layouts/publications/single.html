@@ -4,9 +4,11 @@
   <div class="my-auto">
     <h2 class="mb-0"><span class="text-primary">{{ .Title }}</span></h2>
     <p><a href="{{ .Params.link }}">Link to full {{ .Params.pubtype }}</a></p>
+    {{ with .Params.image }}<img src="{{ . }}" style="max-height:300px;max-width:30%;" align="right"/>{{ end }}
     {{ .Content }}
-    {{ with .Params.image }}<p><img src="{{ . }}" style="max-width:80%;"/></p>{{ end }}
+    <p class="mt-3">
     {{ partial "techtags" . }}
+    </p>
   </div>
 </section>
 {{ end }}
