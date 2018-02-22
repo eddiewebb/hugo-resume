@@ -7,6 +7,11 @@
       vertical-align: sub;
 }
 
+/* ensure items with short summarues push date over image */
+.publication-content{
+  width:90%;
+}
+
 
 h3{
     margin-top:40px;

@@ -16,7 +16,10 @@
       {{ end }}
    {{ end }}
    {{ if .Site.Params.showPublications }}
-       {{ partial "portfolio/publications.html" . }}
+      {{ with .Site.GetPage "section" "publications" }}
+         {{ .Scratch.Add "sectionId" "publications" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
    {{ end }}
    {{ if .Site.Params.showExperience }}
        {{ partial "portfolio/experience.html" . }}

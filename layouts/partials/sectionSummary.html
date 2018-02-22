@@ -4,7 +4,7 @@
     <p>{{ .Content }}</p>
     {{ $featuredPages := where .Pages "Params.featured" true }}
     {{ range $featuredPages }}
-        {{ partial "portfolio/projectSummary" . }}
+      {{ partial (printf "%s%s" .Section "Summary") . }}
     {{ end }}
   </div>
   {{ if gt .Pages $featuredPages }}

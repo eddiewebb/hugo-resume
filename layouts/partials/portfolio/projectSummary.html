@@ -1,8 +1,0 @@
-<h3><a href="{{.Permalink}}">{{ .Title }}</a></h3>
-<p>{{ .Description | safeHTML }}<p>
-{{with  .Params.image }}
-  <img src="{{ . }}" style="max-height:300px;max-width:90%;"/>
-{{ end }}
-{{ with .Params.fact }}<p class="project-fact">{{ . }}</p>{{ end }}
-<p><a href="{{.Permalink}}">Read more..</a></p>
-{{ partial "techtags" . }}
