@@ -2,13 +2,15 @@
 
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
 
-This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project pages allowed more detail.
+This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere.
 
 ![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/about.png)
 
 ![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/skills.png)
 
 ![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/projects.png)
+
+![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/search.png)
 
 See [Eddie's site](https://edwardawebb.com) for a live example.
 
@@ -25,14 +27,12 @@ Edit the main `contents/_index.md with a brief bio/summary`
 Data files are used for simple content presented on the homepage.
 
 - [data/skills.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/skills.json)
-- [data/contributions.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/contributions.json)
 - [data/experience.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/experience.json)
 - [data/education.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/education.json)
-- [data/publications.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/publications.json)
 
 ### projects
 Initially projects were in their own JSON file too, but I decided I wanted to allow more detail and custom formatting.
-Projects are added with `hugo add projects/name-of-project.html`
+Projects are added to one of 2 subfolders of `creations` or `contributions`. The difference indicates your role as originator or colaborator.   Use `hugo add projects/TYPE/name-of-project.md` to leverage the proper archetype.
 
 ### Template params
 
@@ -85,7 +85,9 @@ All personal information outside the above details is captured by params in [`co
 [params.google.analytics]
     trackerID = "XX-123446-01"
 
-
+# Only required if enabling search page at /search
+[outputs]
+    home = ["HTML", "JSON"]
 ```
 
 ## Credits
