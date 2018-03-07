@@ -1,0 +1,13 @@
+[
+  {{ $pages := .Pages }}
+  {{ $len := (len $pages) }}
+  {{ range $index, $element := $pages }}
+    {
+      "title":{{ .Title | jsonify }},
+      "contents":{{ .Content | plainify | jsonify }}
+      {{ if .Params.tags }},
+      "tags":{{ .Params.tags | jsonify }}{{end}},
+      "permalink": {{ .Permalink | jsonify }}
+    }{{ if lt (add $index 1) $len }},{{ end }}
+  {{ end }}
+]

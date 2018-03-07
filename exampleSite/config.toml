@@ -9,7 +9,7 @@ disableKinds = [ "taxonomy", "taxonomyTerm"]
     lastName = "Webb"
     address = "Rollinsford, NH"
 
-    profileImage = "img/profile3.png"
+    profileImage = "img/profile3.jpg"
     email = "email@domain.com"
     description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
     favicon = "images/favicon.ico"
@@ -46,3 +46,6 @@ disableKinds = [ "taxonomy", "taxonomyTerm"]
 
 [params.google.analytics]
     trackerID = "XX-123446-01"
+
+[outputs]
+    home = ["HTML", "JSON"]
