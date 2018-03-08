@@ -3,15 +3,16 @@ summaryInclude=60;
 var fuseOptions = {
   shouldSort: true,
   includeMatches: true,
-  threshold: 0.1,
+  threshold: 0.0,
+  tokenize:true,
   location: 0,
   distance: 100,
   maxPatternLength: 32,
-  minMatchCharLength: 1,
+  minMatchCharLength: 3,
   keys: [
-    "title",
-    "contents",
-    "tags"
+    {name:"title",weight:0.8},
+    {name:"contents",weight:0.5},
+    {name:"tags",weight:0.3}
   ]
 };
 
@@ -46,16 +47,21 @@ function populateResults(result){
     var snippet = "";
     var snippetHighlights=[];
     var tags =[];
-    $.each(value.matches,function(matchKey,mvalue){
-      if(mvalue.key == "tags"){
-        snippetHighlights.push(mvalue.value);
-      }else if(mvalue.key == "contents"){
-        start = mvalue.indices[0][0]-summaryInclude>0?mvalue.indices[0][0]-summaryInclude:0;
-        end = mvalue.indices[0][1]+summaryInclude<contents.length?mvalue.indices[0][1]+summaryInclude:contents.length;
-        snippet += contents.substring(start,end);
-        snippetHighlights.push(mvalue.value.substring(mvalue.indices[0][0],mvalue.indices[0][1]-mvalue.indices[0][0]+1));
-      }
-    });
+    if( fuseOptions.tokenize ){
+      snippetHighlights.push(searchQuery);
+    }else{
+      $.each(value.matches,function(matchKey,mvalue){
+        if(mvalue.key == "tags"){
+          snippetHighlights.push(mvalue.value);
+        }else if(mvalue.key == "contents"){
+          start = mvalue.indices[0][0]-summaryInclude>0?mvalue.indices[0][0]-summaryInclude:0;
+          end = mvalue.indices[0][1]+summaryInclude<contents.length?mvalue.indices[0][1]+summaryInclude:contents.length;
+          snippet += contents.substring(start,end);
+          snippetHighlights.push(mvalue.value.substring(mvalue.indices[0][0],mvalue.indices[0][1]-mvalue.indices[0][0]+1));
+        }
+      });
+    }
+
     if(snippet.length<1){
       snippet += contents.substring(0,summaryInclude*2);
     }
@@ -73,7 +79,7 @@ function populateResults(result){
 }
 
 function param(name) {
-    return (location.search.split(name + '=')[1] || '').split('&')[0];
+    return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
 }
 
 function render(templateString, data) {

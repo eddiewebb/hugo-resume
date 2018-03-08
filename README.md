@@ -4,6 +4,23 @@ Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-over
 
 This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere.
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [hugo Resume](#hugo-resume)
+	- [Examples](#examples)
+	- [Setup & Use](#setup-use)
+		- [Summary](#summary)
+		- [Data files](#data-files)
+		- [Projects](#projects)
+		- [Publications](#publications)
+		- [Template params](#template-params)
+	- [Credits](#credits)
+		- [Start Bootstrap Resume](#start-bootstrap-resume)
+
+<!-- /TOC -->
+
+## Examples
+
 ![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/about.png)
 
 ![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/skills.png)
@@ -18,7 +35,8 @@ See [Eddie's site](https://edwardawebb.com) for a live example.
 
 This theme uses a combination of a custom archetype `projects` and some data files to drive content.
 
-You can test the provided [exampleSite](exampleSite) after cloning with the command: `cd exampleSite;hugo -t hugo-resume --themesDir ../.. server` and visiting localhost:1313 on your machine.
+You can test the provided [exampleSite](exampleSite) after cloning with the command:
+`cd exampleSite;hugo -t hugo-resume --themesDir ../.. server`
 
 ### Summary
 Edit the main `contents/_index.md with a brief bio/summary`
@@ -30,9 +48,12 @@ Data files are used for simple content presented on the homepage.
 - [data/experience.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/experience.json)
 - [data/education.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/education.json)
 
-### projects
+### Projects
 Initially projects were in their own JSON file too, but I decided I wanted to allow more detail and custom formatting.
 Projects are added to one of 2 subfolders of `creations` or `contributions`. The difference indicates your role as originator or colaborator.   Use `hugo add projects/TYPE/name-of-project.md` to leverage the proper archetype.
+
+### Publications
+Similar to projects, creste them under `publications`. INclude any papers, speaking engagemnents, articles, etc.
 
 ### Template params
 
@@ -85,8 +106,7 @@ All personal information outside the above details is captured by params in [`co
 [params.google.analytics]
     trackerID = "XX-123446-01"
 
-# Only required if enabling search page at /search
-[outputs]
+[outputs] #only required for search
     home = ["HTML", "JSON"]
 ```
 
