@@ -1,13 +1,5 @@
-[
-  {{ $pages := .Pages }}
-  {{ $len := (len $pages) }}
-  {{ range $index, $element := $pages }}
-    {
-      "title":{{ .Title | jsonify }},
-      "contents":{{ .Content | plainify | jsonify }}
-      {{ if .Params.tags }},
-      "tags":{{ .Params.tags | jsonify }}{{end}},
-      "permalink": {{ .Permalink | jsonify }}
-    }{{ if lt (add $index 1) $len }},{{ end }}
-  {{ end }}
-]
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+    {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
