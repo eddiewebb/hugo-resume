@@ -7,7 +7,8 @@ theme = "resume"
     firstName = "Eddie"
     lastName = "Webb"
     address = "Rollinsford, NH"
-
+    phone = "1-555-555-1234"
+    contactNote = "Dev Tools Engineer"
     profileImage = "img/profile3.jpg"
     email = "email@domain.com"
     description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
@@ -19,6 +20,8 @@ theme = "resume"
     showPublications = true
     showExperience = true
     showEducation = true
+
+    showQr = true
 
 [[params.handles]]
     name = "LinkedIn"
