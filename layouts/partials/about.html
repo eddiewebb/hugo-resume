@@ -2,13 +2,23 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">{{ .Site.Params.firstName }}
-            <span class="text-primary">{{ .Site.Params.lastName }}</span>
-          </h1>
-          <div class="subheading mb-5">{{ .Site.Params.address }} ·
-            <a href="mailto:{{ substr .Site.Params.email 0 5}}-remove-{{ substr .Site.Params.email 5 }}">{{ substr .Site.Params.email 0 5}}<span style="display:none">-remove-</span>{{ substr .Site.Params.email 5 }}</a>
-          </div>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="mr-auto">
 
+              <h1 class="mb-0">{{ .Site.Params.firstName }}
+                <span class="text-primary">{{ .Site.Params.lastName }}</span>
+              </h1>
+              <div class="subheading mb-5">{{ .Site.Params.address }} ·
+                <a href="mailto:{{ substr .Site.Params.email 0 5}}-remove-{{ substr .Site.Params.email 5 }}">{{ substr .Site.Params.email 0 5}}<span style="display:none">-remove-</span>{{ substr .Site.Params.email 5 }}</a>
+              </div>
+
+            </div>
+
+            {{ if .Site.Params.showQr }}
+              {{ partial "contact-qr" . }}
+            {{ end }}
+        </div>
+        <div>
           {{ .Content }}
           <ul class="list-inline list-social-icons mb-0">
             {{ range .Site.Params.handles }}
@@ -23,4 +33,5 @@
             {{ end }}
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
