@@ -5,8 +5,6 @@
     <h2 class="mb-0"><span class="text-primary">{{ .Title }}</span></h2>
     {{ .Content }}
     {{ with .Params.link }}<p>Project link: <a href="{{ . }}">{{ . }}</a></p>{{ end }}
-    {{ with .Params.image }}<img src="{{ . }}" style="max-width:80%;"/>{{ end }}
-    {{ with .Params.fact }}<p class="project-fact">{{ . }}</p>{{ end }}
     {{ partial "techtags" . }}
   </div>
 </section>
