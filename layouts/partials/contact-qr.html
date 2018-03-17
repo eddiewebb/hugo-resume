@@ -1,0 +1,3 @@
+<div class="card" style="max-width: 155px;max-height: 155px;">
+  <img id="qr-code" alt="Scannable QR code with contact info" src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=MECARD:N:{{ .Param "lastName" }},{{ .Param "firstName" }};{{ .Param "address" }};TEL:{{ .Param "phone" }};EMAIL:{{ .Param "email" }};URL:{{ .Site.BaseURL }};NOTE:{{ .Param "contactNote" }};;"/>
+</div>

@@ -21,13 +21,15 @@ This is basically a single-page website with auto-scrolling based on left-hand n
 
 ## Examples
 
-![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/about.png)
+![About You](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/about.png)
 
-![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/skills.png)
+![With optional Contact QR Code](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/qrcode.png)
 
-![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/projects.png)
+![Highlight skills with dev icons](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/skills.png)
 
-![Sample](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/search.png)
+![List featured projects](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/projects.png)
+
+![Searchable content](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/search.png)
 
 See [Eddie's site](https://edwardawebb.com) for a live example.
 
@@ -64,6 +66,8 @@ All personal information outside the above details is captured by params in [`co
     firstName = "Eddie"
     lastName = "Webb"
     address = "Rollinsford, NH"
+    phone = "1-555-555-1234"
+    contactNote = "Dev Tools Engineer" #used in QR code only
     profileImage = "img/me.png"
     email = "email@domain.com"
     description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
@@ -76,6 +80,8 @@ All personal information outside the above details is captured by params in [`co
     showPublications = true
     showExperience = true
     showEducation = true
+
+		showQr = true
 
     # do you want to show git hash on page footer and link to repo? Add commit URl for repo here.
     gitCommitPrefix = "https://github.com/YOURNAME/REPONAME/commit/"
