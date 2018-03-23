@@ -4,7 +4,7 @@
   <div class="my-auto" id="projects-content">
     <h1 id="{{ urlize .Title }}">{{ .Title }}</h1>
     <p>{{ .Content }}</p>
-    {{ range .Data.Pages }}
+    {{ range .Data.Pages.ByWeight }}
         {{ partial (printf "%s%s" .Section "Summary") . }}
     {{ end }}
     {{ range .Sections }}
