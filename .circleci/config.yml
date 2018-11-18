@@ -9,6 +9,7 @@ jobs:
   test:
     docker:
       - image: felicianotech/docker-hugo:0.47.1
+    working_directory: hugo-resume
     steps:
       - checkout
       - run:
