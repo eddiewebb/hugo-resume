@@ -1,0 +1,50 @@
+version: 2.1
+
+workflows:
+  build-deploy:
+    jobs:
+      - test
+
+jobs:
+  test:
+    docker:
+      - image: felicianotech/docker-hugo:0.47.1
+    working_directory: hugo-resume
+    steps:
+      - checkout
+      - run:
+          name: HUGO build for Test domain
+          command: |
+            hugo -v -s exampleSite --destination /tmp/public -b http://localhost --themesDir ../..
+            ls /tmp/public
+            if [ ! -f /tmp/public/index.html ];then
+              echo "index.html not created, failing"
+              exit 1
+            fi
+      - run:
+          name: Start Local Server
+          background: true
+          command: |
+            hugo server -v -s exampleSite -b http://localhost --themesDir ../..
+      - run:
+          name: Check Server  
+          command: |
+            sleep 5 #wait for last background step to complete
+            HTTPCODE=`curl -s -o /dev/null -w "%{http_code}" http://localhost:1313`
+            if [ "$HTTPCODE" -ne 200 ];then
+              echo "index not found, failing"
+              exit 1
+            fi
+      - run:
+          name: Check Content  
+          command: |
+            curl -s -o /tmp/index  http://localhost:1313
+            #just some keywords that confirm content was read into template..
+            grep 'Rochester' /tmp/index 
+            grep 'fab fa-stack-overflow' /tmp/index 
+            grep 'Eddie Webb' /tmp/index 
+            grep 'BOSH (Bosh Outer SHell)' /tmp/index 
+
+
+            
+
