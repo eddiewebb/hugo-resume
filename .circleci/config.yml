@@ -21,9 +21,14 @@ jobs:
               exit 1
             fi
       - run:
-          name: Simple content check
+          name: Start Local Server
+          background: true
           command: |
-            HTTPCODE=`curl -s -o /dev/null -w "%{http_code}" https://${TESTHOST}/index.html`
+            hugo server -v -s exampleSite -b http://localhost --themesDir ../..
+      - run:
+          name: Check Content  
+          command: |
+            HTTPCODE=`curl -s -o /dev/null -w "%{http_code}" http://localhost:1313/index.html`
             if [ "$HTTPCODE" -ne 200 ];then
               echo "index.html not found, failing"
               exit 1
