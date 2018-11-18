@@ -14,7 +14,7 @@ jobs:
       - run:
           name: HUGO build for Test domain
           command: |
-            hugo -v -s exampleSite --destination /tmp/public -b http://localhost
+            hugo -v -s exampleSite --destination /tmp/public -b http://localhost --themesDir ../..
             ls /tmp/public
             if [ ! -f /tmp/public/index.html ];then
               echo "index.html not created, failing"
