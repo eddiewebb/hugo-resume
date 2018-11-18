@@ -29,6 +29,7 @@ jobs:
       - run:
           name: Check Content  
           command: |
+            sleep 5 #wait for last background step to complete
             HTTPCODE=`curl -s -o /dev/null -w "%{http_code}" http://localhost:1313/index.html`
             if [ "$HTTPCODE" -ne 200 ];then
               echo "index.html not found, failing"
