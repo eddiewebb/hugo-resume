@@ -1,0 +1,30 @@
+version: 2.1
+
+workflows:
+  build-deploy:
+    jobs:
+      - test
+
+jobs:
+  test:
+    docker:
+      - image: felicianotech/docker-hugo:0.47.1
+    steps:
+      - checkout
+      - run:
+          name: HUGO build for Test domain
+          command: |
+            hugo -v -s exampleSite --destination /tmp/public -b http://localhost
+            ls /tmp/public
+            if [ ! -f /tmp/public/index.html ];then
+              echo "index.html not created, failing"
+              exit 1
+            fi
+      - run:
+          name: Simple content check
+          command: |
+            HTTPCODE=`curl -s -o /dev/null -w "%{http_code}" https://${TESTHOST}/index.html`
+            if [ "$HTTPCODE" -ne 200 ];then
+              echo "index.html not found, failing"
+              exit 1
+            fi

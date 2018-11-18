@@ -1,7 +1,7 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "Eddie Webb"
-theme = "resume"
+theme = "hugo-resume"
 
 [params]
     firstName = "Eddie"
@@ -44,7 +44,7 @@ theme = "resume"
 [[params.handles]]
     name = "Keybase"
     link = "https://keybase.io/edwardawebb"
-    icon = "key"
+    icon = "keybase"
 
 [params.google.analytics]
     trackerID = "XX-123446-01"
