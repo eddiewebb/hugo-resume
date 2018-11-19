@@ -92,3 +92,11 @@ div.skills-heading{
   font-size:80%;
   font-style:italic;
 }
+
+
+
+
+.resume-section blockquote {
+    border-left: 4px solid #BD5D38;
+    padding-left: 1em;
+}
