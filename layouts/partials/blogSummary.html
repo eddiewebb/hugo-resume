@@ -1,7 +1,7 @@
 
 <div class="resume-item d-flex flex-column flex-md-row mb-5">
   <div class="publication-content mr-auto">
-    <h3 class="mb-0">{{ .Params.pubtype }} - <a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+    <h3 class="mb-0"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
     <div>{{ .Params.description | safeHTML }}</div>
     <p>{{ partial "techtags" . }}</p>
   </div>

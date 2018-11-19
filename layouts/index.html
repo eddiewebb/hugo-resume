@@ -27,4 +27,10 @@
    {{ if .Site.Params.showEducation }}
        {{ partial "portfolio/education.html" . }}
    {{ end }}
+   {{ if .Site.Params.showBlog }}
+      {{ with .Site.GetPage "section" "blog" }}
+         {{ .Scratch.Add "sectionId" "blog" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
+   {{ end }}
 {{ end }}
