@@ -55,7 +55,7 @@ Initially projects were in their own JSON file too, but I decided I wanted to al
 Projects are added to one of 2 subfolders of `creations` or `contributions`. The difference indicates your role as originator or colaborator.   Use `hugo add projects/TYPE/name-of-project.md` to leverage the proper archetype.
 
 ### Publications
-Similar to projects, creste them under `publications`. INclude any papers, speaking engagemnents, articles, etc.
+Similar to projects, create them under `publications`. Include any papers, speaking engagements, articles, etc.
 
 ### Template params
 
