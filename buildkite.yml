@@ -6,7 +6,7 @@ steps:
     plugins:
       - docker#v2.1.0:
           image: "felicianotech/docker-hugo:0.47.1"
-          command: "hugo -v -s exampleSite --destination /tmp/public -b http://localhost --themesDir ../.."
+          command: ["hugo -v -s exampleSite --destination /tmp/public -b http://localhost --themesDir ../.."]
 
   - command: "ls"
     label: "ls -la /tmp/public"
