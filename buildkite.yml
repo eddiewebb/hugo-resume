@@ -1,0 +1,14 @@
+steps:
+  - command: "ls"
+    label: "ls"
+
+  - command: "hugo -v -s exampleSite --destination /tmp/public -b http://localhost --themesDir ../.."
+    label: "Hugo Build Test Site"
+    env:
+      SECRET: "BAZ"
+    plugins:
+      - docker#v2.1.0:
+          image: "felicianotech/docker-hugo:0.47.1"
+
+  - command: "ls"
+    label: "ls"
