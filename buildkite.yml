@@ -11,4 +11,4 @@ steps:
           image: "felicianotech/docker-hugo:0.47.1"
 
   - command: "ls"
-    label: "ls"
+    label: "ls -la /tmp/public"
