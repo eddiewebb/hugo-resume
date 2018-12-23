@@ -1,0 +1,137 @@
+#
+#. This config file adds support for Netlify CMS, exposed at /admin on the running site.
+# In order to use this on your site,
+#. 1) replace instances of "exampleSite/......" with the appropriate paths, relative from repository root.
+#. 2) replace repo path in `backend` settings, and set branch to master.
+#  3) Optionally enable the [editor workflow](https://www.netlifycms.org/docs/configuration-options/#publish-mode) which uses PRs for content changes
+#  4) Optionally enable [open authoring](https://www.netlifycms.org/docs/open-authoring/) for community sites, which requires #3
+#  
+#
+
+
+
+backend:
+  name: github
+  repo: eddiewebb/hugo-resume
+  branch: cms
+
+
+media_folder: "exampleSite/static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "Blog" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Blog" # Used in the UI, ie.: "New Post"
+    folder: "exampleSite/content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+       
+  - name: "Projects" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Projects" # Used in the UI, ie.: "New Post"
+    folder: "exampleSite/content/projects/creations" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}     
+      - {label: "Publish Date", name: "date", widget: "datetime"} 
+      - {label: "featured", name: "featured", widget: "boolean", required: false}
+      - {label: "link to project repo or site", name: "link", widget: "string"}
+      - {label: "Project Image", name: image, widget: 'image' }
+      - {label: "Brief description", name: "description", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Fun Fact or Stat", name: "fact", widget: "string", default: "used by 20% of Fortune 500 companies!", required: false}
+      - {label: "weight (lower get more visibility)", name: "weight", widget: "number", valueType: float, step: 10, min: 0, max: 1000}
+      - {label: "Sitemap", name: "sitemap", widget: "object", field: {label: weight, name: weight, widget: "number", valueType: float, step: 0.1, min: 0.0, max: 1.0}}
+      - {label: "Body", name: "body", widget: "markdown"}
+       
+  - name: "Contributions" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Contributions" # Used in the UI, ie.: "New Post"
+    folder: "exampleSite/content/projects/contributions" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}     
+      - {label: "Publish Date", name: "date", widget: "datetime"} 
+      - {label: "featured", name: "featured", widget: "boolean", required: false}
+      - {label: "link to project repo or site", name: "link", widget: "string"}
+      - {label: "Project Image", name: image, widget: 'image' }
+      - {label: "Brief description", name: "description", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Fun Fact or Stat", name: "fact", widget: "string", default: "used by 20% of Fortune 500 companies!", required: false}
+      - {label: "weight (lower get more visibility)", name: "weight", widget: "number", valueType: float, step: 10, min: 0, max: 1000}
+      - {label: "Sitemap", name: "sitemap", widget: "object", field: {label: weight, name: weight, widget: "number", valueType: float, step: 0.1, min: 0.0, max: 1.0}}
+      - {label: "Body", name: "body", widget: "markdown"}
+       
+  - name: "Publications" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Publications" # Used in the UI, ie.: "New Post"
+    folder: "exampleSite/content/publications" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}     
+      - {label: "Publish Date", name: "date", widget: "datetime"} 
+      - {label: "featured", name: "featured", widget: "boolean", required: false}
+      - {label: "link to project repo or site", name: "link", widget: "string"}
+      - {label: "Project Image", name: image, widget: 'image' }
+      - {label: "Brief description", name: "description", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Fun Fact or Stat", name: "fact", widget: "string", default: "used by 20% of Fortune 500 companies!", required: false}
+      - {label: "weight (lower get more visibility)", name: "weight", widget: "number", valueType: float, step: 10, min: 0, max: 1000}
+      - {label: "Sitemap", name: "sitemap", widget: "object", field: {label: weight, name: weight, widget: "number", valueType: float, step: 0.1, min: 0.0, max: 1.0}}
+      - {label: "Body", name: "body", widget: "markdown"}
+       
+  - name: 'settings'
+    label: 'Settings'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Settings'
+        file: 'exampleSite/config.toml'
+        extension: toml
+        description: 'General Site Settings'
+        fields:
+          - { label: 'Global title', name: 'title', widget: 'string' }
+          - { label: 'Site Url', name: 'baseURL', widget: 'string' }
+          - { label: 'Theme', name: 'theme', widget: 'hidden', default: "hugo-resume" }
+          - { label: 'Language Code', name: 'languageCode', widget: 'hidden', default: "en-us" }
+          - { label: 'PygmentCodeFences', name: 'PygmentsCodeFences', widget: 'boolean', required: false }
+          - { label: 'PygmentCodeFencesGuessSyntax', name: 'PygmentsCodeFencesGuessSyntax', widget: 'boolean', required: false }
+          - { label: 'PygmentCodeFencesGuessSyntax', name: 'PygmentsStyle', widget: 'string' }
+          - label: 'Params'
+            name: 'params'
+            widget: 'object'
+            fields: 
+              - { label: 'First Name', name: 'firstName', widget: 'string' }
+              - { label: 'Last Name', name: 'lastName', widget: 'string' }
+              - { label: address, name: address, widget: 'string' }
+              - { label: profileImage, name: profileImage, widget: 'image' }
+              - { label: 'phone', name: 'phone', widget: 'string' }
+              - { label: 'email', name: 'email', widget: 'string' }
+              - label: 'Social Handles'
+                name: 'handles'
+                widget: 'list'
+                fields: 
+                  - { label: 'Name', name: 'name', widget: 'string' }
+                  - { label: 'Link', name: 'link', widget: 'string' }
+          
+              - { label: 'showSkills', name: 'showSkills', widget: 'boolean', required: false }
+              - { label: 'showProjects', name: 'showProjects', widget: 'boolean', required: false }
+              - { label: 'showOpenSource', name: 'showOpenSource', widget: 'boolean', required: false }
+              - { label: 'showPublications', name: 'showPublications', widget: 'boolean', required: false }
+              - { label: 'showExperience', name: 'showExperience', widget: 'boolean', required: false }
+              - { label: 'showEducation', name: 'showEducation', widget: 'boolean', required: false }
+              - { label: 'showQr', name: 'showQr', widget: 'boolean', required: false }
+              - { label: 'favicon', name: 'favicon', widget: 'image' }
+              - label: 'Google'
+                name: 'google'
+                widget: 'object'
+                fields: 
+                  - { label: 'analytics', name: 'analytics', widget: 'object',fields: [{ label: 'Tracker ID', name: 'trackerID', widget: 'string' }]  }
+              
+          - { label: 'Show Git Commit INfo', name: 'enableGitInfo', widget: 'boolean', required: false }
+          - { label: 'outputs', name: 'outputs', widget: 'object', field:{name: 'home', label: 'home' , widget: list, default: ['HTML','JSON'] }}
+          - { label: 'taxonomies', name: 'taxonomies', widget: 'hidden', default:{name: 'home', label: 'home' , widget: string, default: ['tags'] }}
+          

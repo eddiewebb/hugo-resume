@@ -100,3 +100,8 @@ div.skills-heading{
     border-left: 4px solid #BD5D38;
     padding-left: 1em;
 }
+
+/* Fix responsive width for blog posts */
+.my-auto {
+	width: 100%
+}

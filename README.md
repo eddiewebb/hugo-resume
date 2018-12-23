@@ -1,4 +1,5 @@
 # hugo Resume
+[![CircleCI](https://circleci.com/gh/eddiewebb/hugo-resume/tree/master.svg?style=svg)](https://circleci.com/gh/eddiewebb/hugo-resume/tree/master)
 
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
 
@@ -55,7 +56,11 @@ Initially projects were in their own JSON file too, but I decided I wanted to al
 Projects are added to one of 2 subfolders of `creations` or `contributions`. The difference indicates your role as originator or colaborator.   Use `hugo add projects/TYPE/name-of-project.md` to leverage the proper archetype.
 
 ### Publications
-Similar to projects, creste them under `publications`. INclude any papers, speaking engagemnents, articles, etc.
+Similar to projects, create them under `publications`. Include any papers, speaking engagements, articles, etc.
+
+### Blog / Posts
+Similar to posts, create them under `blog`. Include any thoughts, musiings, etc.
+**This template does not support a `posts` folder**
 
 ### Template params
 
@@ -80,8 +85,7 @@ All personal information outside the above details is captured by params in [`co
     showPublications = true
     showExperience = true
     showEducation = true
-
-		showQr = true
+    showQr = true
 
     # do you want to show git hash on page footer and link to repo? Add commit URl for repo here.
     gitCommitPrefix = "https://github.com/YOURNAME/REPONAME/commit/"
@@ -119,6 +123,12 @@ All personal information outside the above details is captured by params in [`co
 ## Credits
 
 This project ports the Start Bootstrap Resume theme by David Miller to support hugo.
+
+### Contributions
+The following users have made notable contributions:
+- [Anthony Whitford](https://github.com/awhitford)
+- [Kaushal Modi](https://github.com/kaushalmodi)
+- [Julien Rouse](https://github.com/JulienRouse)
 
 ### Start Bootstrap Resume
 

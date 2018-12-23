@@ -8,13 +8,15 @@ workflows:
 jobs:
   test:
     docker:
-      - image: felicianotech/docker-hugo:0.47.1
-    working_directory: hugo-resume
+      - image: cibuilds/hugo:0.62
+    working_directory: /hugo-resume
     steps:
       - checkout
       - run:
           name: HUGO build for Test domain
           command: |
+            pwd
+            cd /hugo-resume
             hugo -v -s exampleSite --destination /tmp/public -b http://localhost --themesDir ../..
             ls /tmp/public
             if [ ! -f /tmp/public/index.html ];then
@@ -25,6 +27,7 @@ jobs:
           name: Start Local Server
           background: true
           command: |
+            pwd
             hugo server -v -s exampleSite -b http://localhost --themesDir ../..
       - run:
           name: Check Server  
@@ -41,7 +44,6 @@ jobs:
             curl -s -o /tmp/index  http://localhost:1313
             #just some keywords that confirm content was read into template..
             grep 'Rochester' /tmp/index 
-            grep 'fab fa-stack-overflow' /tmp/index 
             grep 'Eddie Webb' /tmp/index 
             grep 'BOSH (Bosh Outer SHell)' /tmp/index 
 
