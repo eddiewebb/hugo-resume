@@ -29,7 +29,7 @@
    {{ end }}
    {{ if .Site.Params.showBlog }}
       {{ with .Site.GetPage "section" "blog" }}
-         {{ .Scratch.Add "sectionId" "blog" }}
+         {{ .Scratch.Set "sectionId" "blog" }}
          {{ partial "sectionSummary" . }}
       {{ end }}
    {{ end }}
