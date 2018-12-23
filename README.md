@@ -80,8 +80,7 @@ All personal information outside the above details is captured by params in [`co
     showPublications = true
     showExperience = true
     showEducation = true
-
-		showQr = true
+    showQr = true
 
     # do you want to show git hash on page footer and link to repo? Add commit URl for repo here.
     gitCommitPrefix = "https://github.com/YOURNAME/REPONAME/commit/"
