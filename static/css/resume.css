@@ -1,12 +1,13 @@
 :root {
   --bodyTextColor: #868e96;
   --borderColor: #dee2e6;
+  --socialIconColor: #495057;
   --mainAccentColor: #BD5D38;
   --mainAccentColorFocused: #824027;
   --mainBGColor: #FFFFFF;
 }
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', 'Helvetica' serif;
   padding-top: 54px;
   color: var(--bodyTextColor);
   background-color: var(--mainBGColor);
@@ -25,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Saira Extra Condensed', 'Helvetica' serif;
   font-weight: 700;
   color: #343a40;
 }
@@ -45,14 +46,14 @@ h2 {
 }
 
 .subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  font-family: 'Saira Extra Condensed', 'Helvetica' serif;
   font-size: 1.35rem;
 }
 
 .list-social-icons a {
-  color: #495057;
+  color: var(--socialIconColor);
 }
 
 .list-social-icons a:hover {
