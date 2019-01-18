@@ -18,8 +18,9 @@
   <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="{{ "css/resume.css" | absURL }}" rel="stylesheet">
-  <link href="{{ "css/tweaks.css" | absURL }}" rel="stylesheet">
+  <link href="{{ .Site.Params.color | absURL }}" rel="stylesheet">
+  <link href="{{ "css/resume.css" | absURL }}"    rel="stylesheet">
+  <link href="{{ "css/tweaks.css" | absURL }}"    rel="stylesheet">
   {{ .Hugo.Generator }}
   {{ block "headfiles" . }}
    <!-- pl;aceholder -->
