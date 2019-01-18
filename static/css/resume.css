@@ -1,11 +1,3 @@
-:root {
-  --bodyTextColor: #868e96;
-  --borderColor: #dee2e6;
-  --socialIconColor: #495057;
-  --mainAccentColor: #BD5D38;
-  --mainAccentColorFocused: #824027;
-  --mainBGColor: #FFFFFF;
-}
 body {
   font-family: 'Open Sans', 'Helvetica' serif;
   padding-top: 54px;
@@ -28,7 +20,7 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', 'Helvetica' serif;
   font-weight: 700;
-  color: #343a40;
+  color: var(--headingTextColor);
 }
 
 
