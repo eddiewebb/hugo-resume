@@ -11,6 +11,15 @@
       "skills":[ "Atlassian","Bamboo","Bitbucket","NGINX","MySQL","Wordpress"]
   },
   {
+      "grouping":"Data Management",
+      "skills":[
+        {"name":"Microsoft SQL Server","icon":"msql_server"},
+        {"name":"Oracle","icon":"database"},
+        "MongoDB",
+        {"name":"Apache Spark"}
+      ]
+  },
+  {
     "grouping":"Containers & Cloud",
       "skills":[
           {"name":"BOSH","link":"https://bosh.io"},
