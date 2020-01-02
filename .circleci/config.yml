@@ -9,7 +9,6 @@ jobs:
   test:
     docker:
       - image: cibuilds/hugo:0.62
-    working_directory: hugo-resume
     steps:
       - checkout
       - run:
