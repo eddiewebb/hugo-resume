@@ -9,12 +9,15 @@ jobs:
   test:
     docker:
       - image: cibuilds/hugo:0.62
+    working_directory: /hugo-resume
     steps:
       - checkout
       - run:
           name: HUGO build for Test domain
           command: |
-            hugo -v -s exampleSite --destination /tmp/public -b http://localhost --themesDir ../.. -t project
+            pwd
+            cd /hugo-resume
+            hugo -v -s exampleSite --destination /tmp/public -b http://localhost --themesDir ../..
             ls /tmp/public
             if [ ! -f /tmp/public/index.html ];then
               echo "index.html not created, failing"
@@ -24,7 +27,8 @@ jobs:
           name: Start Local Server
           background: true
           command: |
-            hugo server -v -s exampleSite -b http://localhost --themesDir ../.. -t project
+            pwd
+            hugo server -v -s exampleSite -b http://localhost --themesDir ../..
       - run:
           name: Check Server  
           command: |
