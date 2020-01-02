@@ -1,4 +1,5 @@
 # hugo Resume
+[![CircleCI](https://circleci.com/gh/eddiewebb/hugo-resume/tree/master.svg?style=svg)](https://circleci.com/gh/eddiewebb/hugo-resume/tree/master)
 
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
 
@@ -118,6 +119,12 @@ All personal information outside the above details is captured by params in [`co
 ## Credits
 
 This project ports the Start Bootstrap Resume theme by David Miller to support hugo.
+
+### Contributions
+The following users have made notable contributions:
+- [Anthony Whitford](https://github.com/awhitford)
+- [Kaushal Modi](https://github.com/kaushalmodi)
+- [Julien Rouse](https://github.com/JulienRouse)
 
 ### Start Bootstrap Resume
 
