@@ -58,6 +58,10 @@ Projects are added to one of 2 subfolders of `creations` or `contributions`. The
 ### Publications
 Similar to projects, create them under `publications`. Include any papers, speaking engagements, articles, etc.
 
+### Blog / Posts
+Similar to posts, create them under `blog`. Include any thoughts, musiings, etc.
+**This template does not support a `posts` folder**
+
 ### Template params
 
 All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml)
