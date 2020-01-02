@@ -12,7 +12,7 @@ theme = "hugo-resume"
     profileImage = "img/TechChat.png"
     email = "email@domain.com"
     description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
-    favicon = "images/favicon.ico"
+    favicon = "/favicon.ico"
     # what sections
     showSkills = true
     showProjects = true
