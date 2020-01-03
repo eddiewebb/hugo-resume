@@ -5,6 +5,7 @@ languageCode = "en-us"
 PygmentsCodeFences = true
 PygmentsCodeFencesGuessSyntax = true
 PygmentsStyle = "monokai"
+enableGitInfo = false
 
 [params]
 address = "Rollinsford, NH"
