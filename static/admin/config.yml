@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: eddiewebb/hugo-resume
+  branch: cms
 
 
 media_folder: "exampleSite/static/img" # Folder where user uploaded files should go
@@ -16,7 +17,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Content", name: "content", widget: "markdown"}
        
   - name: 'settings'
     label: 'Settings'
@@ -32,6 +32,42 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: 'Global title', name: 'title', widget: 'string' }
           - { label: 'Site Url', name: 'baseURL', widget: 'string' }
-          - { label: 'Theme', name: 'theme', widget: 'hidden', default: "hugograyscale" }
+          - { label: 'Theme', name: 'theme', widget: 'hidden', default: "hugo-resume" }
           - { label: 'Language Code', name: 'languageCode', widget: 'hidden', default: "en-us" }
+          - label: 'Params'
+            name: 'params'
+            widget: 'object'
+            fields: 
+              - { label: 'First Name', name: 'firstName', widget: 'string' }
+              - { label: 'Last Name', name: 'lastName', widget: 'string' }
+              - { label: address, name: address, widget: 'string' }
+              - { label: profileImage, name: profileImage, widget: 'image' }
+              - { label: 'phone', name: 'phone', widget: 'string' }
+              - { label: 'email', name: 'email', widget: 'string' }
+              - label: 'Social Handles'
+                name: 'handles'
+                widget: 'list'
+                fields: 
+                  - { label: 'Name', name: 'name', widget: 'string' }
+                  - { label: 'Link', name: 'link', widget: 'string' }
+          
+              - { label: 'showSkills', name: 'showSkills', widget: 'boolean' }
+              - { label: 'showProjects', name: 'showProjects', widget: 'boolean' }
+              - { label: 'showOpenSource', name: 'showOpenSource', widget: 'boolean' }
+              - { label: 'showPublications', name: 'showPublications', widget: 'boolean' }
+              - { label: 'showExperience', name: 'showExperience', widget: 'boolean' }
+              - { label: 'showEducation', name: 'showEducation', widget: 'boolean' }
+              - { label: 'showQr', name: 'showQr', widget: 'boolean' }
+              - { label: 'favicon', name: 'favicon', widget: 'image' }
+              - label: 'Google'
+                name: 'google'
+                widget: 'object'
+                fields: 
+                  - { label: 'analytics', name: 'analytics', widget: 'object',fields: [{ label: 'Tracker ID', name: 'trackerID', widget: 'string' }]  }
+              
+          - { label: 'Show Git Commit INfo', name: 'enableGitInfo', widget: 'boolean' }
+          - { label: 'PygmentCodeFences', name: 'pygmentCodeFences', widget: 'boolean' }
+          - { label: 'PygmentCodeFencesGuessSyntax', name: 'pygmentCodeFencesGuessSyntax', widget: 'boolean' }
+          - { label: 'outputs', name: 'outputs', widget: 'object', field:{name: 'home', label: 'home' , widget: list, default: ['HTML','JSON'] }}
+          - { label: 'taxonomies', name: 'taxonomies', widget: 'hidden', default:{name: 'home', label: 'home' , widget: string, default: ['tags'] }}
           

@@ -48,3 +48,16 @@ theme = "hugo-resume"
 
 [params.google.analytics]
     trackerID = "XX-123446-01"
+
+
+
+enableGitInfo = true
+
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+[outputs]
+  home = ["HTML", "JSON"]
+
+  
+[taxonomies]
+    tag = "tags"
