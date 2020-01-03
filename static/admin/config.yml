@@ -51,13 +51,13 @@ collections: # A list of collections the CMS should be able to edit
                   - { label: 'Name', name: 'name', widget: 'string' }
                   - { label: 'Link', name: 'link', widget: 'string' }
           
-              - { label: 'showSkills', name: 'showSkills', widget: 'boolean' }
-              - { label: 'showProjects', name: 'showProjects', widget: 'boolean' }
-              - { label: 'showOpenSource', name: 'showOpenSource', widget: 'boolean' }
-              - { label: 'showPublications', name: 'showPublications', widget: 'boolean' }
-              - { label: 'showExperience', name: 'showExperience', widget: 'boolean' }
-              - { label: 'showEducation', name: 'showEducation', widget: 'boolean' }
-              - { label: 'showQr', name: 'showQr', widget: 'boolean' }
+              - { label: 'showSkills', name: 'showSkills', widget: 'boolean', required: false }
+              - { label: 'showProjects', name: 'showProjects', widget: 'boolean', required: false }
+              - { label: 'showOpenSource', name: 'showOpenSource', widget: 'boolean', required: false }
+              - { label: 'showPublications', name: 'showPublications', widget: 'boolean', required: false }
+              - { label: 'showExperience', name: 'showExperience', widget: 'boolean', required: false }
+              - { label: 'showEducation', name: 'showEducation', widget: 'boolean', required: false }
+              - { label: 'showQr', name: 'showQr', widget: 'boolean', required: false }
               - { label: 'favicon', name: 'favicon', widget: 'image' }
               - label: 'Google'
                 name: 'google'
@@ -65,9 +65,10 @@ collections: # A list of collections the CMS should be able to edit
                 fields: 
                   - { label: 'analytics', name: 'analytics', widget: 'object',fields: [{ label: 'Tracker ID', name: 'trackerID', widget: 'string' }]  }
               
-          - { label: 'Show Git Commit INfo', name: 'enableGitInfo', widget: 'boolean' }
-          - { label: 'PygmentCodeFences', name: 'pygmentCodeFences', widget: 'boolean' }
-          - { label: 'PygmentCodeFencesGuessSyntax', name: 'pygmentCodeFencesGuessSyntax', widget: 'boolean' }
+          - { label: 'Show Git Commit INfo', name: 'enableGitInfo', widget: 'boolean', required: false }
+          - { label: 'PygmentCodeFences', name: 'PygmentsCodeFences', widget: 'boolean', required: false }
+          - { label: 'PygmentCodeFencesGuessSyntax', name: 'PygmentsCodeFencesGuessSyntax', widget: 'boolean', required: false }
+          - { label: 'PygmentCodeFencesGuessSyntax', name: 'PygmentsStyle', widget: 'string' }
           - { label: 'outputs', name: 'outputs', widget: 'object', field:{name: 'home', label: 'home' , widget: list, default: ['HTML','JSON'] }}
           - { label: 'taxonomies', name: 'taxonomies', widget: 'hidden', default:{name: 'home', label: 'home' , widget: string, default: ['tags'] }}
           
