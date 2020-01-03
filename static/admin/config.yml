@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: eddiewebb/hugo-resume
+
+
+media_folder: "exampleSite/static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "Blog" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Blog" # Used in the UI, ie.: "New Post"
+    folder: "exampleSite/content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Content", name: "content", widget: "markdown"}
+       
+  - name: 'settings'
+    label: 'Settings'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Settings'
+        file: 'exampleSite/config.toml'
+        extension: toml
+        description: 'General Site Settings'
+        fields:
+          - { label: 'Global title', name: 'title', widget: 'string' }
+          - { label: 'Site Url', name: 'baseURL', widget: 'string' }
+          - { label: 'Theme', name: 'theme', widget: 'hidden', default: "hugograyscale" }
+          - { label: 'Language Code', name: 'languageCode', widget: 'hidden', default: "en-us" }
+          
