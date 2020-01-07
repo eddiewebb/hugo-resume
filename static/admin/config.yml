@@ -44,6 +44,40 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Sitemap", name: "sitemap", widget: "object", field: {label: weight, name: weight, widget: "number", valueType: float, step: 0.1, min: 0.0, max: 1.0}}
       - {label: "Body", name: "body", widget: "markdown"}
        
+  - name: "Contributions" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Contributions" # Used in the UI, ie.: "New Post"
+    folder: "exampleSite/content/projects/contributions" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}     
+      - {label: "Publish Date", name: "date", widget: "datetime"} 
+      - {label: "featured", name: "featured", widget: "boolean", required: false}
+      - {label: "link to project repo or site", name: "link", widget: "string"}
+      - {label: "Project Image", name: image, widget: 'image' }
+      - {label: "Brief description", name: "description", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Fun Fact or Stat", name: "fact", widget: "string", default: "used by 20% of Fortune 500 companies!", required: false}
+      - {label: "weight (lower get more visibility)", name: "weight", widget: "number", valueType: float, step: 10, min: 0, max: 1000}
+      - {label: "Sitemap", name: "sitemap", widget: "object", field: {label: weight, name: weight, widget: "number", valueType: float, step: 0.1, min: 0.0, max: 1.0}}
+      - {label: "Body", name: "body", widget: "markdown"}
+       
+  - name: "Publications" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Publications" # Used in the UI, ie.: "New Post"
+    folder: "exampleSite/content/publications" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}     
+      - {label: "Publish Date", name: "date", widget: "datetime"} 
+      - {label: "featured", name: "featured", widget: "boolean", required: false}
+      - {label: "link to project repo or site", name: "link", widget: "string"}
+      - {label: "Project Image", name: image, widget: 'image' }
+      - {label: "Brief description", name: "description", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Fun Fact or Stat", name: "fact", widget: "string", default: "used by 20% of Fortune 500 companies!", required: false}
+      - {label: "weight (lower get more visibility)", name: "weight", widget: "number", valueType: float, step: 10, min: 0, max: 1000}
+      - {label: "Sitemap", name: "sitemap", widget: "object", field: {label: weight, name: weight, widget: "number", valueType: float, step: 0.1, min: 0.0, max: 1.0}}
+      - {label: "Body", name: "body", widget: "markdown"}
+       
   - name: 'settings'
     label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection

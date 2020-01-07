@@ -6,9 +6,9 @@ description: "Uses Async call to lucene index for super fast autocompletion to a
 featured: true
 tags: ["Java","jQuery","REST APIs","Bamboo","JSON"]
 fact: "Reduce page load time from minutes to instantaneous."
-weight: "100"
+weight: 100
 sitemap: 
-    priority : "0.8"
+    priority : 0.8
 ---
 
 Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.
