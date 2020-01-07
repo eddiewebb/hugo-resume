@@ -1,8 +1,11 @@
 #
 #. This config file adds support for Netlify CMS, exposed at /admin on the running site.
 # In order to use this on your site,
-#. 1) replace instances of "exampleSite/......" with the appropriate paths
-#. 2) replace repo path in `backend` settings 
+#. 1) replace instances of "exampleSite/......" with the appropriate paths, relative from repository root.
+#. 2) replace repo path in `backend` settings, and set branch to master.
+#  3) Optionally enable the [editor workflow](https://www.netlifycms.org/docs/configuration-options/#publish-mode) which uses PRs for content changes
+#  4) Optionally enable [open authoring](https://www.netlifycms.org/docs/open-authoring/) for community sites, which requires #3
+#  
 #
 
 
