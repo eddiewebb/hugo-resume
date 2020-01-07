@@ -3,22 +3,25 @@
 
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
 
-This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere.
+This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere.  Includes an `/admin` endpoint that can allow authorized users to use a WYSIWYG editor and commit files back to markdown, but with a Wordpress/CMS like experience.
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- MarkdownTOC autolink="true" -->
 
-- [hugo Resume](#hugo-resume)
-	- [Examples](#examples)
-	- [Setup & Use](#setup-use)
-		- [Summary](#summary)
-		- [Data files](#data-files)
-		- [Projects](#projects)
-		- [Publications](#publications)
-		- [Template params](#template-params)
-	- [Credits](#credits)
-		- [Start Bootstrap Resume](#start-bootstrap-resume)
+- [Examples](#examples)
+- [Setup & Use](#setup--use)
+    - [Summary](#summary)
+    - [Data files](#data-files)
+    - [Projects](#projects)
+    - [Publications](#publications)
+    - [Blog / Posts](#blog--posts)
+    - [Template params](#template-params)
+    - [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
+- [Credits](#credits)
+    - [Contributions](#contributions)
+    - [Start Bootstrap Resume](#start-bootstrap-resume)
 
-<!-- /TOC -->
+<!-- /MarkdownTOC -->
+
 
 ## Examples
 
@@ -64,61 +67,12 @@ Similar to posts, create them under `blog`. Include any thoughts, musiings, etc.
 
 ### Template params
 
-All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml)
+All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml), or can be edited in the "Settings" collection if using CMS.
 
-```
-[params]
-    firstName = "Eddie"
-    lastName = "Webb"
-    address = "Rollinsford, NH"
-    phone = "1-555-555-1234"
-    contactNote = "Dev Tools Engineer" #used in QR code only
-    profileImage = "img/me.png"
-    email = "email@domain.com"
-    description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
-    favicon = "images/favicon.ico"
+### CMS Editor with Netlify CMS
+**Does not require deployment to Netlify!**
 
-    # what sections to display.  Setting to false disables navigation and section.
-    showSkills = true
-    showProjects = true
-    showOpenSource = true
-    showPublications = true
-    showExperience = true
-    showEducation = true
-    showQr = true
-
-    # do you want to show git hash on page footer and link to repo? Add commit URl for repo here.
-    gitCommitPrefix = "https://github.com/YOURNAME/REPONAME/commit/"
-
-
-[[params.handles]]
-    name = "LinkedIn"
-    link = "https://www.linkedin.com/in/edwardwebb/"
-
-[[params.handles]]
-    name = "GitHub"
-    link = "https://github.com/eddiewebb/"
-
-[[params.handles]]
-    name = "Bitbucket"
-    link = "https://bitbucket.org/eddiewebb/"
-
-[[params.handles]]
-    name = "Stack Overflow"
-    link = "https://stackoverflow.com/users/story/82880"
-    icon = "stack-overflow" #optional icon attribute used for Font Awesome icons, otherwise the name is lowercased.
-
-[[params.handles]]
-    name = "Keybase"
-    link = "https://keybase.io/edwardawebb"
-    icon = "key" #optional icon attribute used for Font Awesome icons, otherwise the name is lowercased.
-
-[params.google.analytics]
-    trackerID = "XX-123446-01"
-
-[outputs] #only required for search
-    home = ["HTML", "JSON"]
-```
+[Netlify CMS](https://www.netlifycms.org/) is an open source project that enables CMS like experience for static site generation tools like Hugo. This theme includes a fully working integration and guide in [exampleSite/static/admin](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/static/admin)
 
 ## Credits
 
