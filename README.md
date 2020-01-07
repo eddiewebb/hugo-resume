@@ -74,6 +74,9 @@ All personal information outside the above details is captured by params in [`co
 
 [Netlify CMS](https://www.netlifycms.org/) is an open source project that enables CMS like experience for static site generation tools like Hugo. This theme includes a fully working integration and guide in [exampleSite/static/admin](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/static/admin)
 
+![CMS integration](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/cms.png)
+
+
 ## Credits
 
 This project ports the Start Bootstrap Resume theme by David Miller to support hugo.
