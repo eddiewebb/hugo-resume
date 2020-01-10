@@ -15,7 +15,7 @@ This is basically a single-page website with auto-scrolling based on left-hand n
     - [Publications](#publications)
     - [Blog / Posts](#blog--posts)
     - [Template params](#template-params)
-    - [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
+- [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
 - [Credits](#credits)
     - [Contributions](#contributions)
     - [Start Bootstrap Resume](#start-bootstrap-resume)
@@ -69,12 +69,12 @@ Similar to posts, create them under `blog`. Include any thoughts, musiings, etc.
 
 All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml), or can be edited in the "Settings" collection if using CMS.
 
-### CMS Editor with Netlify CMS
+## CMS Editor with Netlify CMS
 **Does not require deployment to Netlify!**
 
 [Netlify CMS](https://www.netlifycms.org/) is an open source project that enables CMS like experience for static site generation tools like Hugo. This theme includes a fully working integration and guide in [exampleSite/static/admin](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/static/admin)
 
-![CMS integration](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/cms.png)
+![CMS integration](/images/cms.png)
 
 
 ## Credits
