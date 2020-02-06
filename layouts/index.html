@@ -17,7 +17,7 @@
    {{ end }}
    {{ if .Site.Params.showPublications }}
       {{ with .Site.GetPage "section" "publications" }}
-         {{ .Scratch.Set "sectionId" "publications" }}
+         {{ .Scratch.Set "sectionId" (default "Publications" .Site.Params.publicationsAlternateName) }}
          {{ partial "sectionSummary" . }}
       {{ end }}
    {{ end }}

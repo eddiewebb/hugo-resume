@@ -30,7 +30,7 @@
       {{ end }}
       {{ if .Site.Params.showPublications }}
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#publications">Publications</a>
+            <a class="nav-link js-scroll-trigger" href="/#{{ default "Publications" .Site.Params.publicationsAlternateName }}">{{ default "Publications" .Site.Params.publicationsAlternateName }}</a>
           </li>
       {{ end }}
       {{ if .Site.Params.showExperience }}
