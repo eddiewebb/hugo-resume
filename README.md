@@ -45,7 +45,12 @@ You can test the provided [exampleSite](exampleSite) after cloning with the comm
 `cd exampleSite;hugo -t hugo-resume --themesDir ../.. server`
 
 ### Summary
-Edit the main `contents/_index.md with a brief bio/summary`
+Edit the main `contents/_index.md with a brief bio/summary`  
+Requires the following in `config.toml` if using Hugo 0.60.0 or higher:
+```
+[markup.goldmark.renderer]
+unsafe = true
+```
 
 ### Data files
 Data files are used for simple content presented on the homepage.
