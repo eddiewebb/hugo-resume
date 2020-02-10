@@ -2,7 +2,7 @@
 title: Publications
 date: 2020-01-07T16:47:30.077Z
 link: NA
-image: /img/organicdevops.png
+image: /img/organicdevops.webp
 description: NA
 weight: 10
 sitemap:

@@ -2,7 +2,7 @@
 title: Schema.org Structured Data documentation fixes
 date: 2020-01-07T17:08:21.433Z
 link: 'https://github.com/schemaorg/schemaorg/pull/1120'
-image: /img/schema-org.png
+image: /img/schema-org.webp
 description: >-
   Not all pull requests are glorious code, documentation is really important
   too! This commit fixed some invalid JSON found in some example specs.
