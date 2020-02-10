@@ -24,12 +24,10 @@
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"></noscript>
   <!-- Custom styles for this template -->
-  <link rel="preload" href="css/resume.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/resume.css"></noscript>
-  <link rel="preload" href="css/tweaks.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/tweaks.css"></noscript>
-  <link href="{{ "css/resume.css" | absURL }}" rel="stylesheet">
-  <link href="{{ "css/tweaks.css" | absURL }}" rel="stylesheet">
+  <link rel="preload" href="{{ "css/resume.css" | absURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ "css/resume.css" | absURL }}"></noscript>
+  <link rel="preload" href="{{ "css/tweaks.css" | absURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ "css/tweaks.css" | absURL }}"></noscript>
   {{ hugo.Generator }}
   {{ block "headfiles" . }}
    <!-- pl;aceholder -->
