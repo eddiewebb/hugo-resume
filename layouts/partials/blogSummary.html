@@ -1,15 +1,17 @@
 
-<div class="resume-item d-flex flex-column flex-md-row mb-5">
+<div class="resume-item d-flex flex-row mb-5">
   <div class="publication-content mr-auto">
     <h3 class="mb-0"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
     <div>{{ .Summary | safeHTML }}</div>
-    <p>{{ partial "techtags" . }}</p>
+    <div>{{ partial "advtags" . }}</div>
   </div>
-  <div class="resume-date text-md-right">
+  <div class="resume-date text-md-right flex-col">
     <span class="text-primary">{{ .Date.Format "January 2, 2006" }}</span>
-    {{ range $.Page.Resources.Match "teaser" }}
-    {{ $image := .Resize "200x" }}
-    <img src="{{ $image.Permalink }}" style="max-width:250px;padding:5px;"/>
-{{ end }}
+    <div>
+    {{ with $.Page.Resources.GetMatch "teaser" }}
+	    {{ $image := .Fill "250x250" }}
+	    <img src="{{ $image.Permalink }}" style="max-width:250px;padding:5px;"/>
+	{{ end }}
+	</div>
   </div>
 </div>
