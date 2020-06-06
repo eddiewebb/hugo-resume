@@ -7,5 +7,14 @@
   </div>
   <div class="resume-date text-md-right flex-col">
     <span class="text-primary">{{ .Date.Format "January 2, 2006" }}</span>
+    <div>
+
+      {{ $teaser := default ($.Page.Resources.GetMatch "map") ($.Page.Resources.GetMatch "teaser") }}
+
+      {{ with $teaser }}
+	       {{ $image := .Fill "250x250" }}
+    	    <img src="{{ $image.Permalink }}" style="max-width:250px;padding:5px;"/>
+    	{{ end }}
+	</div>
   </div>
 </div>

@@ -5,6 +5,7 @@ draft: false
 tags: [adv, motorcycles, riding]
 advtags: [forest, curvy, off-road, waterside]
 featured: true
+type: adv
 resources:
 - name: 'teaser-optional'
   src: 'curves.JPG'
