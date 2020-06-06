@@ -1,12 +1,12 @@
 ---
-title: 'Running on empty - Loon Lake Loop'
-date: 2020-06-02
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
 draft: false
 tags: [adv, motorcycles, riding]
-advtags: [forest, curvy, off-road]
+advtags: [forest, curvy, off-road, waterside]
 featured: true
 resources:
-- name: 'teaser'
+- name: 'teaser-optional'
   src: 'curves.JPG'
 - name: 'map'
   src: 'route.png'
