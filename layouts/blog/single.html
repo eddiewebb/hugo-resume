@@ -12,7 +12,7 @@
     </div>
     <div>
     	{{ with $.Page.Resources.GetMatch "map" }}
-		    {{ $image := .Resize "600x" }}
+		    {{ $image := .Resize "x400" }}
 		    {{ $gpx := $.Page.Resources.GetMatch "gpx"}}
 		    <a href="{{ $gpx.Permalink }}" title="Click to download gpx file"><img alt="Map image of this route"  src="{{ $image.Permalink }}" style="padding:5px;"/></a>
 		{{ end }}
