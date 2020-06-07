@@ -13,7 +13,7 @@
     	{{ with $.Page.Resources.GetMatch "map" }}
 		    {{ $image := .Resize "x400" }}
 		    {{ $gpx := $.Page.Resources.GetMatch "gpx"}}
-		    <a href="{{ $gpx.Permalink }}" title="Click to download gpx file"><img alt="Map image of this route"  src="{{ $image.Permalink }}" style="padding:5px;"/></a>
+		    <a href="{{ $gpx.Permalink }}" title="Click to download gpx file" download="{{ $.Site.Title }} ADV Rides - {{ $.Page.Title }}.gpx"><img alt="Map image of this route"  src="{{ $image.Permalink }}" style="padding:5px;"/></a>
 		{{ end }}
     </div>
     <div>
@@ -24,7 +24,7 @@
 	</div>
     <div>
     	{{ with $.Page.Resources.GetMatch "gpx" }}
-		    <a href="{{ .Permalink }}" title="Click to download gpx file">GPX file</a>
+		    <a href="{{ .Permalink }}" title="Click to download gpx file" download="{{ $.Site.Title }} ADV Rides - {{ $.Page.Title }}.gpx">GPX file</a>
 		{{ end }}
     </div>
     {{ partial "advtags" . }}

@@ -105,3 +105,24 @@ div.skills-heading{
 .my-auto {
 	width: 100%
 }
+
+
+
+    .advteaser {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        display: inline-block;
+    }
+    .advteaser img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .advteaser .img-top {
+        display: none;
+        z-index: 99;
+    }
+    .advteaser:hover .img-top {
+        display: inline;
+    }

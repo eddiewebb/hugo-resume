@@ -1,20 +1,22 @@
 
-<div class="resume-item d-flex flex-row mb-5">
-  <div class="publication-content mr-auto">
+<div class="resume-item row mb-5">
+
+
+  <div class="ml-3 col-auto col-md-3 col-lg-3 col-xl-2 advteaser mt-2">
+    {{ $teaser := default ($.Page.Resources.GetMatch "map") ($.Page.Resources.GetMatch "teaser") }}
+    {{ $roller := $.Page.Resources.GetMatch "map" }}
+   
+       {{ $timage :=  $teaser.Fill "250x250" }}
+        <img class="img-fluid" src="{{ $timage.Permalink }}" alt="Card Back">
+       {{ $rimage :=  $roller.Fill "250x250" }}
+        <img class="img-fluid  img-top" src="{{ $rimage.Permalink }}" >
+  </div>
+  <div class="col-12 col-md-8 col-lg-8 col-xl-9">
     <h3 class="mb-0"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+    <span class="text-primary">{{ .Date.Format "January 2, 2006" }}</span>
     <div>{{ .Summary | safeHTML }}</div>
     <div>{{ partial "advtags" . }}</div>
   </div>
-  <div class="resume-date text-md-right flex-col">
-    <span class="text-primary">{{ .Date.Format "January 2, 2006" }}</span>
-    <div>
 
-      {{ $teaser := default ($.Page.Resources.GetMatch "map") ($.Page.Resources.GetMatch "teaser") }}
-
-      {{ with $teaser }}
-	       {{ $image := .Fill "250x250" }}
-    	    <img src="{{ $image.Permalink }}" style="max-width:250px;padding:5px;"/>
-    	{{ end }}
-	</div>
-  </div>
 </div>
+
