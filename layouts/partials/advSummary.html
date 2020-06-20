@@ -4,7 +4,7 @@
 
   <div class="ml-3 col-auto col-md-3 col-lg-3 col-xl-2 advteaser mt-2">
     {{ $teaser := default ($.Page.Resources.GetMatch "map") ($.Page.Resources.GetMatch "teaser") }}
-    {{ $roller := $.Page.Resources.GetMatch "map" }}
+    {{ $roller := default ($.Page.Resources.GetMatch "teaser") ($.Page.Resources.GetMatch "map") }}
    
        {{ $timage :=  $teaser.Fill "250x250" }}
         <img class="img-fluid" src="{{ $timage.Permalink }}" alt="Card Back">
