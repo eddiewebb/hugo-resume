@@ -106,7 +106,9 @@ div.skills-heading{
 	width: 100%
 }
 
+    .advteaser-container{
 
+    }
 
     .advteaser {
         width: 250px;
@@ -123,6 +125,6 @@ div.skills-heading{
         display: none;
         z-index: 99;
     }
-    .advteaser:hover .img-top {
+    .advteaser-container:hover .img-top {
         display: inline;
     }
