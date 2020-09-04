@@ -23,7 +23,7 @@ pipeline {
                }
            }
         }
-        /* waiting on plugin update
+        /* waiting on plugin update to added gated/approved deployments
         stage('Deploy - prod') {
                 steps {
                     echo 'Queueing...'
