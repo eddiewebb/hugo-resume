@@ -23,6 +23,7 @@ pipeline {
                }
            }
         }
+        /* waiting on plugin update
         stage('Deploy - prod') {
                 steps {
                     echo 'Queueing...'
@@ -51,5 +52,6 @@ pipeline {
                     echo "Deploying!"
                 }
             }
+            */
     }
 }
