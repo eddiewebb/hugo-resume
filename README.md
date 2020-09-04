@@ -18,7 +18,6 @@ This is basically a single-page website with auto-scrolling based on left-hand n
 - [Credits](#credits)
     - [Contributions](#contributions)
     - [Start Bootstrap Resume](#start-bootstrap-resume)
-
 <!-- /MarkdownTOC -->
 
 ## Examples
