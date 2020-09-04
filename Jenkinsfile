@@ -19,7 +19,7 @@ pipeline {
            }
            post {
                always {
-                   jiraSendDeploymentInfo site: 'se-demo.atlassian.net', issueKeys: ['ECOM-99'], environmentId: 'us-dev-1', environmentName: 'us-dev-1', environmentType: 'development'
+                   jiraSendDeploymentInfo site: 'se-demo.atlassian.net', serviceIds: ['b:YXJpOmNsb3VkOmdyYXBoOjpzZXJ2aWNlLzJlNjQ1Y2Q0LTc4ZmEtMTFlYS04ZjMyLTBhNzdmM2Y0NTMwNC8xNWM3YmZjYy1lZWI2LTExZWEtOWFmZC0xMjhiNDI4MTk0MjQ='], environmentId: 'us-dev-1', environmentName: 'us-dev-1', environmentType: 'development'
                }
            }
         }
