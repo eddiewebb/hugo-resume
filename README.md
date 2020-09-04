@@ -22,7 +22,6 @@ This is basically a single-page website with auto-scrolling based on left-hand n
 
 <!-- /MarkdownTOC -->
 
-
 ## Examples
 
 ![About You](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/about.png)
