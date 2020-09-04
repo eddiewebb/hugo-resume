@@ -1,7 +1,6 @@
 # hugo Resume
 
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
-
 This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere.  Includes an `/admin` endpoint that can allow authorized users to use a WYSIWYG editor and commit files back to markdown, but with a Wordpress/CMS like experience.
 
 <!-- MarkdownTOC autolink="true" -->
