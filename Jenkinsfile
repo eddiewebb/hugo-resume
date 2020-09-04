@@ -2,9 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
-            git 'https://github.com/eddiewebb/hugo-resume.git'
-    
+        stage('Hello') {    
             steps {
                 echo 'Hello World'
             }
