@@ -14,7 +14,7 @@ This is basically a single-page website with auto-scrolling based on left-hand n
     - [Projects](#projects)
     - [Publications](#publications)
     - [Blog / Posts](#blog--posts)
-    - [Template params](#template-params)
+    - [Template params](#template-params)tgggtgc
 - [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
 - [Credits](#credits)
     - [Contributions](#contributions)
