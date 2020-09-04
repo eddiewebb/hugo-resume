@@ -52,7 +52,6 @@ Data files are used for simple content presented on the homepage.
 - [data/experience.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/experience.json)
 - [data/education.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/education.json)
 
-
 ### Projects
 Initially projects were in their own JSON file too, but I decided I wanted to allow more detail and custom formatting.
 Projects are added to one of 2 subfolders of `creations` or `contributions`. The difference indicates your role as originator or colaborator.   Use `hugo add projects/TYPE/name-of-project.md` to leverage the proper archetype.
