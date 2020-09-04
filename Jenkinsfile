@@ -8,7 +8,7 @@ pipeline {
             }
             post {
                 always {
-                    jiraSendBuildInfo site: 'se-demo.atlassian.net'
+                    jiraSendBuildInfo branch: 'ECOM-99-issue', site: 'se-demo.atlassian.net'
                 }
             }
         }
