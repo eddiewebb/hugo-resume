@@ -1,0 +1,21 @@
+
+<div class="resume-item row mb-5 advteaser-container">
+  <div class="ml-3 col-auto col-md-3 col-lg-3 col-xl-2 advteaser mt-2">
+    {{ $teaser := default ($.Page.Resources.GetMatch "map") ($.Page.Resources.GetMatch "teaser") }}
+    {{ $roller := default ($.Page.Resources.GetMatch "teaser") ($.Page.Resources.GetMatch "map") }}
+   <a href="{{ .Permalink }}">
+       {{ $timage :=  $teaser.Fill "250x250" }}
+        <img class="img-fluid" src="{{ $timage.Permalink }}" alt="Card Back">
+       {{ $rimage :=  $roller.Fill "250x250" }}
+        <img class="img-fluid  img-top" src="{{ $rimage.Permalink }}" >
+    </a>
+  </div>
+  <div class="col-12 col-md-8 col-lg-8 col-xl-9">
+    <h3 class="mb-0"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+    <span class="text-primary">{{ .Date.Format "January 2, 2006" }}</span>
+    <div>{{ .Summary | safeHTML }}</div>
+    <div>{{ partial "advtags" . }}</div>
+  </div>
+
+</div>
+
