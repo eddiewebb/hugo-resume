@@ -1,27 +1,25 @@
 # hugo Resume
-[![CircleCI](https://circleci.com/gh/eddiewebb/hugo-resume/tree/master.svg?style=svg)](https://circleci.com/gh/eddiewebb/hugo-resume/tree/master)
 
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
-
 This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere.  Includes an `/admin` endpoint that can allow authorized users to use a WYSIWYG editor and commit files back to markdown, but with a Wordpress/CMS like experience.
 
 <!-- MarkdownTOC autolink="true" -->
 
-- [Examples](#examples)
+- [Examples](#examples)]
+
 - [Setup & Use](#setup--use)
     - [Summary](#summary)
     - [Data files](#data-files)
     - [Projects](#projects)
     - [Publications](#publications)
     - [Blog / Posts](#blog--posts)
-    - [Template params](#template-params)
+    - [Template params](#template-params)tgggtgc
 - [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
 - [Credits](#credits)
     - [Contributions](#contributions)
     - [Start Bootstrap Resume](#start-bootstrap-resume)
 
 <!-- /MarkdownTOC -->
-
 
 ## Examples
 
@@ -53,6 +51,7 @@ Data files are used for simple content presented on the homepage.
 - [data/skills.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/skills.json)
 - [data/experience.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/experience.json)
 - [data/education.json](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/data/education.json)
+
 
 ### Projects
 Initially projects were in their own JSON file too, but I decided I wanted to allow more detail and custom formatting.
@@ -101,3 +100,4 @@ Start Bootstrap was created by and is maintained by **[David Miller](http://davi
 * https://github.com/davidtmiller
 
 Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
