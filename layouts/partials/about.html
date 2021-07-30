@@ -17,9 +17,21 @@
             {{ if .Site.Params.showQr }}
               {{ partial "contact-qr" . }}
             {{ end }}
+
         </div>
         <div>
           {{ .Content }}
+          <h3>Certifications</h3>
+          <ul class="list-inline list-social-icons mb-0">
+            {{ range .Site.Data.certifications }}
+                <li class="list-inline-item">
+                  <a href="{{ .proof }}" data-toggle="tooltip" title="{{ .name }}" data-offset="0 10" rel="me">
+                    <img src="{{ .badge }}" width=75 />
+                  </a>
+                </li>
+            {{ end }}
+          </ul>
+          <h3>Socialization</h3>
           <ul class="list-inline list-social-icons mb-0">
             {{ range .Site.Params.handles }}
                 <li class="list-inline-item">
