@@ -12,9 +12,10 @@
     <div>
     	{{ with $.Page.Resources.GetMatch "map" }}
 		    {{ $image := .Resize "x400" }}
-		    {{ $gpx := $.Page.Resources.GetMatch "gpx"}}
-		    <a href="{{ $gpx.Permalink }}" title="Click to download gpx file" download="{{ $.Site.Title }} ADV Rides - {{ $.Page.Title }}.gpx"><img alt="Map image of this route"  src="{{ $image.Permalink }}" style="padding:5px;"/></a>
-		{{ end }}
+    			{{ with $.Page.Resources.GetMatch "gpx" }}
+		   			 <a href="{{ .Permalink }}" title="Click to download gpx file" download="{{ $.Site.Title }} ADV Rides - {{ $.Page.Title }}.gpx"><img alt="Map image of this route"  src="{{ $image.Permalink }}" style="padding:5px;"/></a>
+	   			{{ end }}
+			{{ end }}
     </div>
     <div>
     	{{ $body := replace .Content .Summary "" }}
