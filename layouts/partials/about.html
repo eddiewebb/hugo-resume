@@ -21,6 +21,7 @@
         </div>
         <div>
           {{ .Content }}
+          {{ if .Site.Params.showCertifications }}
           <h3>Certifications</h3>
           <ul class="list-inline list-social-icons mb-0">
             {{ range .Site.Data.certifications }}
@@ -31,6 +32,8 @@
                 </li>
             {{ end }}
           </ul>
+          {{ end }}
+          {{ if .Site.Params.showSocializations }}
           <h3>Socialization</h3>
           <ul class="list-inline list-social-icons mb-0">
             {{ range .Site.Params.handles }}
@@ -44,6 +47,7 @@
                 </li>
             {{ end }}
           </ul>
+          {{ end }}
         </div>
       </div>
     </section>
