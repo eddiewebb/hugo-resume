@@ -1,6 +1,4 @@
 {{ $original := .Page.Resources.GetMatch (.Get 0) }}
-{{ $path := path.Join "content" $original.RelPermalink }}
-{{ $imgAttributes := imageConfig $path }}
 {{ $options := .Get 1 }}
 {{ .Scratch.Set "image" ($original.Fit $options) }}
 {{ $image := .Scratch.Get "image" }}
