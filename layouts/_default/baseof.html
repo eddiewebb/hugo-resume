@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{{ .Site.Title }} | {{ .Title }}</title>
   <meta property="og:title" content="{{ .Site.Title }} | {{ .Title }}" />
-  <meta property="og:image" content="{{ .Site.Params.profileImage | absURL }}" />
+
+  {{if isset .Params "featured_image" }}
+    <meta property="og:image" content="{{ index .Params "featured_image" }}" />
+  {{ else }}
+    <meta property="og:image" content="{{ .Site.Params.profileImage | absURL }}" />
+  {{ end }}
   <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Description }}{{ end }}">
   <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Description }}{{ end }}" />
   <meta name="author" content="{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}">
