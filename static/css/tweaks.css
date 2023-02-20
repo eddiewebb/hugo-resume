@@ -9,6 +9,9 @@
   margin-left: 4px;
   line-height: 48px;
 }
+img {
+  max-width: 100% !important;
+}
 }
 
 
