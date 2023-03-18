@@ -21,7 +21,7 @@
         </div>
         <div>
           {{ .Content }}
-          <h3>Certifications</h3>
+          <h3>{{ i18n "certifications" }}</h3>
           <ul class="list-inline list-social-icons mb-0">
             {{ range .Site.Data.certifications }}
                 <li class="list-inline-item">
@@ -31,7 +31,7 @@
                 </li>
             {{ end }}
           </ul>
-          <h3>Socialization</h3>
+          <h3>{{ i18n "socialization" }}</h3>
           <ul class="list-inline list-social-icons mb-0">
             {{ range .Site.Params.handles }}
                 <li class="list-inline-item">
