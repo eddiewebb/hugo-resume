@@ -25,7 +25,7 @@
       {{ end }}
       {{ if .Site.Params.showOpenSource }}
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+            <a class="nav-link js-scroll-trigger" href="/#{{ default "open" .Site.Params.openSourceAlternateName }}">{{ default "Open Source" .Site.Params.openSourceAlternateName }}</a>
           </li>
       {{ end }}
       {{ if .Site.Params.showPublications }}
