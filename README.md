@@ -5,7 +5,7 @@ This is basically a single-page website with auto-scrolling based on left-hand n
 
 <!-- MarkdownTOC autolink="true" -->
 
-- [Examples](#examples)]
+- [Examples](#examples)
 
 - [Setup & Use](#setup--use)
     - [Summary](#summary)
