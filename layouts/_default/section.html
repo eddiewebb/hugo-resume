@@ -5,14 +5,18 @@
     <h1 id="{{ urlize .Title }}">{{ .Title }}</h1>
     <p>{{ .Content }}</p>
     {{ range .Data.Pages.ByWeight }}
-        {{ partial (printf "%s%s" .Type "Summary") . }}
-    {{ end }}
-    {{ range .Sections }}
-      <h2 id="{{ urlize .Title }}"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      <p>{{ .Content }}</p>
-      {{ range .Pages }}
+      {{ if ne .Type "markdown" }}
         {{ partial (printf "%s%s" .Type "Summary") . }}
       {{ end }}
+    {{ end }}
+    {{ range .Sections }}
+        <h2 id="{{ urlize .Title }}"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Content }}</p>
+        {{ range .Pages }}
+          {{ if ne .Type "markdown" }}
+            {{ partial (printf "%s%s" .Type "Summary") . }}
+          {{ end }}
+        {{ end }}
     {{ end }}
   </div>
 </section>
