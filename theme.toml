@@ -9,6 +9,7 @@ homepage = "https://edwardwebb.com/"
 tags = ["portfolio","resume","responsive", "cms"]
 features = ["social","mobile","projects","responsive","qr-code","cms"]
 min_version = "0.62"
+defaultContentLanguage = "en"
 
 [author]
   name = "Eddie Webb"
