@@ -1,0 +1,23 @@
+[
+	{
+		"name":"AWS Solutions Architect",
+		"description": "AWS Certified Solutions Architect – Associate",
+		"badge":"https://images.credly.com/size/340x340/images/4bc21d8b-4afe-4fbd-9a90-a9de8bf7b240/AWS-SolArchitect-Associate-2020.png",
+		"proof":"https://www.credly.com/badges/9c168644-e23c-4605-9d98-91b5db56e6c9"
+
+	},
+	{
+		"name":"ACP-JSD",
+		"description": "Jira Service Desk Administator",
+		"badge":"https://www.certmetrics.com/api/ob/image/atlassian/c/4/",
+		"proof":"https://www.certmetrics.com/atlassian/public/badge.aspx?i=4&t=c&d=2020-05-11&ci=AT00143196"
+
+	},
+	{
+		"name":"ACP-JCA",
+		"description": "Jira Cloud Administator",
+		"badge":"https://www.certmetrics.com/api/ob/image/atlassian/c/26/",
+		"proof":"https://www.certmetrics.com/atlassian/public/badge.aspx?i=26&t=c&d=2020-08-07&ci=AT00143196"
+		
+	}
+]

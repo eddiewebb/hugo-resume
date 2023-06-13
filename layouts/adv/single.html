@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ partial "breadcrumbs" . }}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+  <div class="my-auto">
+  	<div class="mb-3 d-flex flex-row justify-content-between">
+    	<h2 class="mb-0"><span class="text-primary">{{ .Title }}</span></h2>
+    	<span class="">{{ .Date.Format "January 2, 2006" }}</span>
+    </div>
+    <div>
+    	{{ .Summary }}
+    </div>
+    <div>
+    	{{ with $.Page.Resources.GetMatch "map" }}
+		    {{ $image := .Resize "x400" }}
+    			{{ with $.Page.Resources.GetMatch "gpx" }}
+		   			 <a href="{{ .Permalink }}" title="Click to download gpx file" download="{{ $.Site.Title }} ADV Rides - {{ $.Page.Title }}.gpx"><img alt="Map image of this route"  src="{{ $image.Permalink }}" style="padding:5px;"/></a>
+	   			{{ end }}
+			{{ end }}
+    </div>
+    <div>
+    	{{ $body := replace .Content .Summary "" }}
+		{{ $body | safeHTML }}
+	    {{ with .Params.link }}
+	    	<p>Project link: <a href="{{ . }}">{{ . }}</a></p>{{ end }}
+	</div>
+    <div>
+    	{{ with $.Page.Resources.GetMatch "gpx" }}
+		    <a href="{{ .Permalink }}" title="Click to download gpx file" download="{{ $.Site.Title }} ADV Rides - {{ $.Page.Title }}.gpx">GPX file</a>
+		{{ end }}
+    </div>
+    {{ partial "advtags" . }}
+  </div>
+</section>
+{{ end }}

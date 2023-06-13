@@ -5,7 +5,7 @@ This is basically a single-page website with auto-scrolling based on left-hand n
 
 <!-- MarkdownTOC autolink="true" -->
 
-- [Examples](#examples)]
+- [Examples](#examples)
 
 - [Setup & Use](#setup--use)
     - [Summary](#summary)
@@ -13,7 +13,8 @@ This is basically a single-page website with auto-scrolling based on left-hand n
     - [Projects](#projects)
     - [Publications](#publications)
     - [Blog / Posts](#blog--posts)
-    - [Template params](#template-params)tgggtgc
+    - [Template params](#template-params)
+    - [Internationalization](#internationalization)
 - [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
 - [Credits](#credits)
     - [Contributions](#contributions)
@@ -67,6 +68,12 @@ Similar to posts, create them under `blog`. Include any thoughts, musiings, etc.
 ### Template params
 
 All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml), or can be edited in the "Settings" collection if using CMS.
+
+### Internationalization
+
+Left navigation menu and section titles handle multiple languages. Use `defaultContentLanguage` parameter un [`config.toml`](https://gohugo.io/content-management/multilingual/) to choose your language. Current supported languages are :
+- `en`
+- `fr`
 
 ## CMS Editor with Netlify CMS
 **Does not require deployment to Netlify!**
