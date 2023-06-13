@@ -1,3 +1,20 @@
+
+@media (max-width: 768px) {
+  /* makes googlebot happy with tap target spacing */
+  a {
+  min-height: 48px !important;
+  min-width: 48px !important;
+  min-inline-size: 48px !important;
+  margin-right: 4px;
+  margin-left: 4px;
+  line-height: 48px;
+}
+}
+
+img {
+  max-width: 100% !important;
+}
+
 .p-0{
   margin: 0 auto;
 }

@@ -22,7 +22,7 @@
         <div>
           {{ .Content }}
           {{ if .Site.Params.showCertifications }}
-          <h3>Certifications</h3>
+          <h3>{{ i18n "certifications" }}</h3>
           <ul class="list-inline list-social-icons mb-0">
             {{ range .Site.Data.certifications }}
                 <li class="list-inline-item">
@@ -34,7 +34,7 @@
           </ul>
           {{ end }}
           {{ if .Site.Params.showSocializations }}
-          <h3>Socialization</h3>
+          <h3>{{ i18n "socialization" }}</h3>
           <ul class="list-inline list-social-icons mb-0">
             {{ range .Site.Params.handles }}
                 <li class="list-inline-item">
