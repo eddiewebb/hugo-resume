@@ -1,4 +1,4 @@
 <div class="p0 m0 text-center" >
-  <p class="card-text">Scan contact card</p>
-  <img id="qr-code" class="card-img-top" alt="Scannable QR code with contact info" src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=MECARD:N:{{ .Param "lastName" }},{{ .Param "firstName" }};{{ .Param "address" }};TEL:{{ .Param "phone" }};EMAIL:{{ .Param "email" }};URL:{{ .Site.BaseURL }};NOTE:{{ .Param "contactNote" }};;"/>
+  <p class="">Scan contact card</p>
+  <img id="qr-code" class="qrcode" alt="Scannable QR code with contact info" src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=MECARD:N:{{ .Param "lastName" }},{{ .Param "firstName" }};{{ .Param "address" }};TEL:{{ .Param "phone" }};EMAIL:{{ .Param "email" }};URL:{{ .Site.BaseURL }};NOTE:{{ .Param "contactNote" }};;"/>
 </div>

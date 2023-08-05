@@ -145,3 +145,7 @@ div.skills-heading{
     .advteaser-container:hover .img-top {
         display: inline;
     }
+
+    img.qrcode {
+      max-width: 300px !important;
+    }
