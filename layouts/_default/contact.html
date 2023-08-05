@@ -1,0 +1,17 @@
+
+              
+              
+              {{ define "main" }}
+              <section class="resume-section p-3 p-lg-5 d-flex d-column" id="{{ replace .Title " " "-" }}">
+                <div class="my-auto">
+                  <h3 class="mb-0 text-center
+                  "><span class="text-primary text-center
+                    ">{{ .Param "firstName" }} {{ .Param "lastName" }}</span></h3>
+                  
+                  {{ partial "contact-qr" . }}
+                  <div class="text-center">
+                    {{ .Content }}
+                  </div>
+                </div>
+              </section>
+              {{ end }}
