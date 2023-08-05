@@ -11,7 +11,7 @@
    {{ end }}
    {{ if .Site.Params.showOpenSource }}
       {{ with .Site.GetPage "section" "projects/contributions" }}
-         {{ .Scratch.Set "sectionId" "open" }}
+         {{ .Scratch.Set "sectionId" (default "open" .Site.Params.openSourceAlternateName) }}
          {{ partial "sectionSummary" . }}
       {{ end }}
    {{ end }}
