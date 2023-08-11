@@ -13,40 +13,10 @@
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="{{ "#about" | relURL }}">{{ i18n "about" }}</a>
       </li>
-      {{ if .Site.Params.showSkills }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#skills">{{ i18n "skills" }}</a>
-          </li>
-      {{ end }}
-      {{ if .Site.Params.showProjects }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
-          </li>
-      {{ end }}
-      {{ if .Site.Params.showOpenSource }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#{{ default "open" .Site.Params.openSourceAlternateName }}">{{ default "Open Source" .Site.Params.openSourceAlternateName }}</a>
-          </li>
-      {{ end }}
-      {{ if .Site.Params.showPublications }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#{{ default "Publications" .Site.Params.publicationsAlternateName }}">{{ default "Publications" .Site.Params.publicationsAlternateName }}</a>
-          </li>
-      {{ end }}
-      {{ if .Site.Params.showExperience }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#experience">{{ i18n "experience" }}</a>
-          </li>
-      {{ end }}
-      {{ if .Site.Params.showEducation }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#education">{{ i18n "education" }}</a>
-          </li>
-      {{ end }}
-      {{ if .Site.Params.showBlog }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#blog">{{ i18n "blog" }}</a>
-          </li>
+      {{ range .Site.Params.sections }}
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#{{.}}">{{ . | i18n }}</a>
+      </li>
       {{ end }}
       {{ if .Site.Params.showContact}}
           <li class="nav-item">
