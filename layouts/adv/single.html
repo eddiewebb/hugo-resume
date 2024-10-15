@@ -25,7 +25,7 @@
     </div>
     <div>
         {{ with $.Page.Resources.GetMatch "gpx" }}
-            <a href="{{ .Permalink }}" title="Click to download gpx file" download="{{ site.Title }} ADV Rides - {{ $.Page.Title }}.gpx">GPX file</a>
+            <a href="{{ .Permalink }}" title="Click to download gpx file" download="{{ $.Site.Title }} ADV Rides - {{ $.Page.Title }}.gpx">GPX file</a>
         {{ end }}
     </div>
     {{ partial "advtags" . }}
