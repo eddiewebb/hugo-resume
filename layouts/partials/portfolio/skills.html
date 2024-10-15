@@ -1,12 +1,12 @@
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
   <div class="my-auto" id="skills-content">
   <h2 class="mb-5">{{ i18n "skills" }}</h2>
-    {{ range $.Site.Data.skills }}
+    {{ range site.Data.skills }}
         <div class="subheading mb-3 skills-heading">{{ .grouping }}</div>
             <ul>
             {{ range .skills }}
                 {{ if isset . "name" }}
-                    {{ $devicon := cond (in $.Site.Data.devicons (lower .icon)) (lower .icon) (cond (in $.Site.Data.devicons (lower .name)) (lower .name) "terminal_badge") }}
+                    {{ $devicon := cond (in site.Data.devicons (lower .icon)) (lower .icon) (cond (in site.Data.devicons (lower .name)) (lower .name) "terminal_badge") }}
                     <li class="list-inline-item">
                       <i class="devicons devicons-{{ $devicon }}"></i>
                       {{if isset . "link"}}
@@ -17,7 +17,7 @@
                     </li>
                 {{ else }}
                   <li class="list-inline-item">
-                    <i class="devicons devicons-{{ cond (in $.Site.Data.devicons (lower .)) (lower .) "terminal_badge" }}"></i>
+                    <i class="devicons devicons-{{ cond (in site.Data.devicons (lower .)) (lower .) "terminal_badge" }}"></i>
                     {{ . }}
                   </li>
                 {{ end }}
