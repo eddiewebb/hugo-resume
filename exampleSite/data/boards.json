@@ -1,0 +1,20 @@
+[
+    {
+        "organization":"Champlain Valley Educational Services",
+        "logo":"https://www.cves.org/wp-content/uploads/2023/01/cropped-cves-logo-color-no-subtext-square-512-192x192.png",
+        "website":"https://cves.org",
+        "description":"CVES is the regional Board of Cooperative Educational Services (BOCES) for 16 component schools across Clinton, Esses, Warren, and Washington counties.",
+        "term_start":"2023-06-01",
+        "term_end":"2025-05-31",
+        "role":"BOCES Member"
+    },
+    {
+        "organization":"Peru Central School Disctrict, Board of Education",
+        "logo":"https://perucsd.org/wp-content/uploads/2021/05/cropped-square-192x192.png",
+        "website":"https://perucsd.org",
+        "description":"Peru Central School is a Regional school serving multiple towns in Clinton County. Go Nighthawks!",
+        "term_start":"2022-06-01",
+        "term_end":"2027-05-31",
+        "role":"BOE Member"
+    }
+]

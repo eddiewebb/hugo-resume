@@ -1,4 +1,4 @@
-title = "Eddie Webb"
+title = "Eddie Webbinaro"
 baseURL = "https://example.com/"
 theme = "hugo-resume"
 languageCode = "en-us"
@@ -12,11 +12,14 @@ address = "Rollinsford, NH"
 email = "email@domain.com"
 favicon = "/favicon.ico"
 firstName = "Eddie"
-lastName = "Webb"
+lastName = "Webbinaro"
 phone = "1-555-555-1234"
 profileImage = "img/TechChat.png"
 showQr = true
 showContact = true
+showBoards  = true
+showCertifications = true
+showSocializations = true
 sections = ["skills","publications","creations","contributions","experience","education","blog"]
 
 
@@ -26,24 +29,27 @@ sections = ["skills","publications","creations","contributions","experience","ed
 trackerID = "XX-123446-01"
 
 [[params.handles]]
-link = "https://www.linkedin.com/in/edwardwebb/"
-name = "LinkedIn"
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/in/edwardwebb/"
 
 [[params.handles]]
-link = "https://github.com/eddiewebb/"
-name = "GitHub"
+    name = "GitHub"
+    link = "https://github.com/eddiewebb/"
 
 [[params.handles]]
-link = "https://bitbucket.org/eddiewebb/"
-name = "Bitbucket"
+    name = "Keybase"
+    link = "https://keybase.io/edwardawebb"
+    icon = "keybase"
+    
+[[params.handles]]
+    name = "Bluesky"
+    link = "https://bsky.app/profile/webbinaro.dev"
+    icon = "bluesky"
 
 [[params.handles]]
-link = "https://stackoverflow.com/users/story/82880"
-name = "Stack Overflow"
-
-[[params.handles]]
-link = "https://keybase.io/edwardawebb"
-name = "Keybase"
+    link = "https://stackoverflow.com/users/82880/eddie"
+    name = "Stack Overflow"
+    icon = "stack-overflow"
 
 [outputs]
 home = ["HTML", "JSON"]
