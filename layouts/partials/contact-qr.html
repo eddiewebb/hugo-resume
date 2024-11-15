@@ -1,4 +1,7 @@
 <div class="p0 m0 text-center" >
   <p class="">Scan contact card</p>
-  <img id="qr-code" class="qrcode" alt="Scannable QR code with contact info" src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=MECARD:N:{{ .Param "lastName" }},{{ .Param "firstName" }};{{ .Param "address" }};TEL:{{ .Param "phone" }};EMAIL:{{ .Param "email" }};URL:{{ .Site.BaseURL }};NOTE:{{ .Param "contactNote" }};;"/>
+  <img id="qr-code" 
+  class="qrcode" 
+  alt="Scannable QR code with contact info" 
+  src="https://quickchart.io/chart?cht=qr&chs=200x200&chl=MECARD:N:{{ .Param "lastName" }},{{ .Param "firstName" }};{{ .Param "address" }};TEL:{{ .Param "phone" }};EMAIL:{{ .Param "email" }};URL:{{ .Site.BaseURL }};NOTE:{{ .Param "contactNote" }};;"/>
 </div>
