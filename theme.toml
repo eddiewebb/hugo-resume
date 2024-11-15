@@ -12,8 +12,8 @@ min_version = "0.62"
 defaultContentLanguage = "en"
 
 [author]
-  name = "Eddie Webb"
-  homepage = "https://edwardawebb.com"
+  name = "Eddie Webbinaro"
+  homepage = "https://webbinaro.dev"
 
 
 # If porting an existing theme
