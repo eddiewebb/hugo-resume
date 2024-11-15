@@ -16,7 +16,7 @@
             {{ partial "sectionSummary" . }}
          {{ end }}
       {{ else }}
-         {{ partial (printf "portfolio/%s" . ) $.Site }}
+         {{ partial (printf "portfolio/%s" . ) $site }}
       {{ end }}
    {{ end }}
 {{ end }}
