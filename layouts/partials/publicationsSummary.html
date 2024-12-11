@@ -7,6 +7,16 @@
   </div>
   <div class="resume-date text-md-right">
     <span class="text-primary">{{ .Params.date | dateFormat "January 2006" }}</span>
+    {{ if .Resources.Get .Params.image }}
+    {{ with .Resources.Get .Params.image }}
+    <img src="{{ .RelPermalink }}" style="max-width:250px;padding:5px;"/>
+    {{ end }}
+    {{ else if resources.Get .Params.image }}
+    {{ with .Resources.Get .Params.image }}
+    <img src="{{ .RelPermalink }}" style="max-width:250px;padding:5px;"/>
+    {{ end }}
+    {{ else if .Params.image }}
     <img src="{{ .Params.image }}" style="max-width:250px;padding:5px;"/>
+    {{ end }}
   </div>
 </div>
