@@ -50,7 +50,7 @@
           <ul class="list-inline list-social-icons mb-0 mt-0">
             {{ range .Site.Data.boards }}
                 <li class="list-inline-item mt-0">
-                  <div class="mt-0 text-center" data-toggle="tooltip" title="{{ .description }}" data-offset="-30 -30">
+                  <div class="mt-0 text-center" data-toggle="tooltip" title="{{ .description }}" {{ if .ariaLabel }}aria-label="{{ .ariaLabel }}"{{ end }} data-offset="-30 -30">
                     <a href="{{ .url }}" rel="external">
                       <img src="{{ .logo }}" width=75 />
                     </a><br />
