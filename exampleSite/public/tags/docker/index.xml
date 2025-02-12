@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Eddie Webbinaro</title>
+    <link>http://localhost:1313/tags/docker/</link>
+    <description>Recent content in Docker on Eddie Webbinaro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Added Docker Build Status Badge to shields.io</title>
+      <link>http://localhost:1313/projects/contributions/shields-docker/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>http://localhost:1313/projects/contributions/shields-docker/</guid>
+      <description>&lt;p&gt;Shields.io is a massive library of badges that can be inserted into project README&amp;rsquo;s or websites displaying various statuses (code coverage, health, version, etc).  Support for docker was missing the current build health, and was a pretty trivial addition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker image for Bitbucket CI/CD Pipelines  &#34;shipit&#34;</title>
+      <link>http://localhost:1313/projects/creations/docker-marketplace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/creations/docker-marketplace/</guid>
+      <description>&lt;p&gt;Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace.&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Executes integration/AUT level tests against all stated compatible versions for the product&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Uploads generated artifact to Atlassian marketplace&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Provides corresponding metadata indicating version, release notes, and compatibility&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

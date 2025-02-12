@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Creations on Eddie Webbinaro</title>
+    <link>http://localhost:1313/projects/creations/</link>
+    <description>Recent content in Creations on Eddie Webbinaro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/creations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BOSH release for Bamboo &amp; Remote Agents</title>
+      <link>http://localhost:1313/projects/creations/bosh-agents/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>http://localhost:1313/projects/creations/bosh-agents/</guid>
+      <description>&lt;p&gt;BOSH (Bosh Outer SHell) &amp;ldquo;&amp;hellip;&lt;!-- raw HTML omitted --&gt; is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&lt;!-- raw HTML omitted --&gt;&amp;rdquo; And it&amp;rsquo;s amazingly powerful. This examples uses BOSH to provision an Alassian vendor app running on JDK along with the support Postgres database and agents to support it.  The releases manages the health of services and will automatically provision, start/stop processes across the various services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Atlassian Marketplace Plugins</title>
+      <link>http://localhost:1313/projects/creations/marketplace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/creations/marketplace/</guid>
+      <description>&lt;p&gt;Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core products (primarily JIRA and Bamboo) to enrich CI/CD capabilities, DevOps automation, or productivity. Functionality spans user interface, web services and persistence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker image for Bitbucket CI/CD Pipelines  &#34;shipit&#34;</title>
+      <link>http://localhost:1313/projects/creations/docker-marketplace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/creations/docker-marketplace/</guid>
+      <description>&lt;p&gt;Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace.&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Executes integration/AUT level tests against all stated compatible versions for the product&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Uploads generated artifact to Atlassian marketplace&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Provides corresponding metadata indicating version, release notes, and compatibility&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

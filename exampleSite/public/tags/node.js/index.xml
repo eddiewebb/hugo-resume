@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js on Eddie Webbinaro</title>
+    <link>http://localhost:1313/tags/node.js/</link>
+    <description>Recent content in Node.js on Eddie Webbinaro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Added Docker Build Status Badge to shields.io</title>
+      <link>http://localhost:1313/projects/contributions/shields-docker/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>http://localhost:1313/projects/contributions/shields-docker/</guid>
+      <description>&lt;p&gt;Shields.io is a massive library of badges that can be inserted into project README&amp;rsquo;s or websites displaying various statuses (code coverage, health, version, etc).  Support for docker was missing the current build health, and was a pretty trivial addition.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

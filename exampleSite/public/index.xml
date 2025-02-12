@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Eddie Webbinaro</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Eddie Webbinaro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atlassian Deployment Triggers</title>
+      <link>http://localhost:1313/projects/contributions/deploy-triggers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/contributions/deploy-triggers/</guid>
+      <description>&lt;p&gt;Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
+      <link>http://localhost:1313/publications/alldaydevops/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/alldaydevops/</guid>
+      <description>&lt;p&gt;This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.&lt;/li&gt;&#xA;&lt;li&gt;Favor deep end-to-end accomplishments over broad but incremental steps forward. Focus on taking the right teams far before encouraging broad adoption.&lt;/li&gt;&#xA;&lt;li&gt;Centralize the platforms and tools that your teams shouldn’t be thinking about. Provide foundational services/commodities and let teams stay on purpose.&lt;/li&gt;&#xA;&lt;li&gt;Incorporate contributions from everyone; don’t stifle autonomy. Stay open to new ways of working.&lt;/li&gt;&#xA;&lt;li&gt;Challenge security policies, but respect intentions. Find new ways to enforce concerns without abandoning precaution.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/FsfKsqI07jM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Added Docker Build Status Badge to shields.io</title>
+      <link>http://localhost:1313/projects/contributions/shields-docker/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>http://localhost:1313/projects/contributions/shields-docker/</guid>
+      <description>&lt;p&gt;Shields.io is a massive library of badges that can be inserted into project README&amp;rsquo;s or websites displaying various statuses (code coverage, health, version, etc).  Support for docker was missing the current build health, and was a pretty trivial addition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Schema.org Structured Data documentation fixes</title>
+      <link>http://localhost:1313/projects/contributions/schema-org/</link>
+      <pubDate>Tue, 07 Jan 2020 17:08:21 +0000</pubDate>
+      <guid>http://localhost:1313/projects/contributions/schema-org/</guid>
+      <description>&lt;p&gt;While adding &lt;em&gt;Structured Data&lt;/em&gt; to a client&amp;rsquo;s website I found some example JSON that was invalid.  Simple contribution to cleanup the user documentation providing syntactically valid JSON documents.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BOSH release for Bamboo &amp; Remote Agents</title>
+      <link>http://localhost:1313/projects/creations/bosh-agents/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>http://localhost:1313/projects/creations/bosh-agents/</guid>
+      <description>&lt;p&gt;BOSH (Bosh Outer SHell) &amp;ldquo;&amp;hellip;&lt;!-- raw HTML omitted --&gt; is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&lt;!-- raw HTML omitted --&gt;&amp;rdquo; And it&amp;rsquo;s amazingly powerful. This examples uses BOSH to provision an Alassian vendor app running on JDK along with the support Postgres database and agents to support it.  The releases manages the health of services and will automatically provision, start/stop processes across the various services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forcing Visits to use SSL</title>
+      <link>http://localhost:1313/blog/force-ssl/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      <guid>http://localhost:1313/blog/force-ssl/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Doesn&amp;rsquo;t matter whether it&amp;rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. &lt;strong&gt;If your passing around passwords or other sensitive info you should really implement SSL.&lt;/strong&gt; SSL provides 2 main perks to your visitors.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets.&lt;/li&gt;&#xA;&lt;li&gt;Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &amp;lsquo;man in the middle&amp;quot; attack.&lt;/li&gt;&#xA;&lt;li&gt;Finally it gives your site that touch of class&amp;hellip;. which of course a classy person like yourself relies on.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Once you implement SSL certificates on your server you&amp;rsquo;ll want to &lt;strong&gt;require secure connections&lt;/strong&gt; using Apache&amp;rsquo;s rewrite module. Now I won&amp;rsquo;t dwell on the creation and signing of certificates, its already well documented.  If your just starting out though,heres a few links I recommend;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Atlassian Marketplace Plugins</title>
+      <link>http://localhost:1313/projects/creations/marketplace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/creations/marketplace/</guid>
+      <description>&lt;p&gt;Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core products (primarily JIRA and Bamboo) to enrich CI/CD capabilities, DevOps automation, or productivity. Functionality spans user interface, web services and persistence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker image for Bitbucket CI/CD Pipelines  &#34;shipit&#34;</title>
+      <link>http://localhost:1313/projects/creations/docker-marketplace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/creations/docker-marketplace/</guid>
+      <description>&lt;p&gt;Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace.&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Executes integration/AUT level tests against all stated compatible versions for the product&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Uploads generated artifact to Atlassian marketplace&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Provides corresponding metadata indicating version, release notes, and compatibility&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Search Results</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description>&lt;p&gt;This file exists solely to respond to /search URL with the related &lt;code&gt;search&lt;/code&gt; layout template.&lt;/p&gt;&#xA;&lt;p&gt;No content shown here is rendered, all content is based in the template layouts/page/search.html&lt;/p&gt;&#xA;&lt;p&gt;Setting a very low sitemap priority will tell search engines this is not important content.&lt;/p&gt;&#xA;&lt;p&gt;This implementation uses Fusejs, jquery and mark.js&lt;/p&gt;&#xA;&lt;h2 id=&#34;initial-setup&#34;&gt;Initial setup&lt;/h2&gt;&#xA;&lt;p&gt;Search  depends on additional output content type of JSON in config.toml&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[outputs]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  home = [&amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;searching-additional-fileds&#34;&gt;Searching additional fileds&lt;/h2&gt;&#xA;&lt;p&gt;To search additional fields defined in front matter, you must add it in 2 places.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

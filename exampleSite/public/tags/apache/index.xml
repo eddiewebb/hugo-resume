@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache on Eddie Webbinaro</title>
+    <link>http://localhost:1313/tags/apache/</link>
+    <description>Recent content in Apache on Eddie Webbinaro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2009 14:09:10 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Forcing Visits to use SSL</title>
+      <link>http://localhost:1313/blog/force-ssl/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      <guid>http://localhost:1313/blog/force-ssl/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Doesn&amp;rsquo;t matter whether it&amp;rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. &lt;strong&gt;If your passing around passwords or other sensitive info you should really implement SSL.&lt;/strong&gt; SSL provides 2 main perks to your visitors.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets.&lt;/li&gt;&#xA;&lt;li&gt;Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &amp;lsquo;man in the middle&amp;quot; attack.&lt;/li&gt;&#xA;&lt;li&gt;Finally it gives your site that touch of class&amp;hellip;. which of course a classy person like yourself relies on.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Once you implement SSL certificates on your server you&amp;rsquo;ll want to &lt;strong&gt;require secure connections&lt;/strong&gt; using Apache&amp;rsquo;s rewrite module. Now I won&amp;rsquo;t dwell on the creation and signing of certificates, its already well documented.  If your just starting out though,heres a few links I recommend;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
