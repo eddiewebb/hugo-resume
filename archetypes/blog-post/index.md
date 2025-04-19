@@ -19,4 +19,4 @@ Welcome to sample post
 - of 
 - things
 
-Special image formattting to float in upper right
+Special image formatting to float in upper right

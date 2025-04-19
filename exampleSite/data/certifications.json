@@ -8,14 +8,14 @@
 	},
 	{
 		"name":"ACP-JSD",
-		"description": "Jira Service Desk Administator",
+		"description": "Jira Service Desk Administrator",
 		"badge":"https://www.certmetrics.com/api/ob/image/atlassian/c/4/",
 		"proof":"https://www.certmetrics.com/atlassian/public/badge.aspx?i=4&t=c&d=2020-05-11&ci=AT00143196"
 
 	},
 	{
 		"name":"ACP-JCA",
-		"description": "Jira Cloud Administator",
+		"description": "Jira Cloud Administrator",
 		"badge":"https://www.certmetrics.com/api/ob/image/atlassian/c/26/",
 		"proof":"https://www.certmetrics.com/atlassian/public/badge.aspx?i=26&t=c&d=2020-08-07&ci=AT00143196"
 		

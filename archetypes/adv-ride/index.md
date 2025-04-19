@@ -34,7 +34,7 @@ I had been back on tarmac for about 20 minutes when I turned onto Goldsmith rd, 
 County Road 26 was amazing, I wanted to really rev into some of these twisty turns, and stop at every other one to take a picture, but with my empty mileage counter growing I grew more nervous with every twist that only revealed more road.
 ![County Road 26](cr26.jpg)
 
-Where CR26 ended was popular state road, but the town was a miss. Checking the map again, and searching for gas stations my heart dropped atleast another 12 miles in the wrong direction. Heading home there was one about 20 miles out.
+Where CR26 ended was popular state road, but the town was a miss. Checking the map again, and searching for gas stations my heart dropped at least another 12 miles in the wrong direction. Heading home there was one about 20 miles out.
 
 Optimism in heart I was optimistic this now major highway would have some little place that no one bothered to mark on my GPS.
 
@@ -50,4 +50,3 @@ Wait, WAIT, turn-around!  Was that in fact an old hand-pump -- is it show or fun
 No option but to try!
 
 Cash only, hand-cranked spinning wheels quickly brought my tank to full again.  The anxiety of leaving my bike and walking lord knows how far fades, I can finally resume taking in the scenery, and gosh what a ride.
-

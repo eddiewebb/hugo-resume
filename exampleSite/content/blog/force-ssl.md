@@ -21,7 +21,7 @@ Once you implement SSL certificates on your server you'll want to **require secu
 
 The second link uses the schools internal CA, you will need to pay a public CA like Entrust or Verisign. **All of this information is aimed at 'nix or solaris servers running apache**. Why? cause a production windows server is laughable :-p
 
-Now that you have a certificate, whats next?
+Now that you have a certificate, what's next?
 --------------------------------------------
 
 So there you are you have a shiny new Certificate and Server key, how do you force visitors to your apache driven site to use the SSL? You copied the certificates into the appropite locations right? And you have made the needed changes in httpd.conf right? So now when you view https://example.com you see a 'trusted' warning or your site right? If No to any of these than [this article](http://www.sitepoint.com/article/securing-apache-2-server-ssl/ "Securing Apcche Server with SSL") does a pretty good job of outlining those steps.
@@ -33,7 +33,7 @@ First you need to decide if you want to force every page on your site to use SSL
 
 ### Forcing entire domain to use SSL
 
-**You want any visit, any where to use ssl**. This probably the simplest solution. Create or append to your htaccess file in the top directory of your server. Some people use a port check (80 is typically http, while 443 is https) but if you have alernate configs or the user just adds :8080 to the end of the url this method is useless. Instead check whether the https environmental variable is set, if not then redirect.
+**You want any visit, any where to use ssl**. This probably the simplest solution. Create or append to your htaccess file in the top directory of your server. Some people use a port check (80 is typically http, while 443 is https) but if you have alternate configs or the user just adds :8080 to the end of the url this method is useless. Instead check whether the https environmental variable is set, if not then redirect.
 
 ```
 RewriteCond %{HTTPS} !=on
