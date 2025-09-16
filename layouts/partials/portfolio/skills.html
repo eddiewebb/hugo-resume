@@ -6,22 +6,26 @@
         <div class="subheading mb-3 skills-heading">{{ .grouping }}</div>
             <ul>
             {{ range .skills }}
+                {{ $name := "error" }}
+                {{ $iconclass := "devicon-bash-plain" }}
                 {{ if isset . "name" }}
-                    {{ $devicon := cond (in $data.devicons (lower .icon)) (lower .icon) (cond (in $data.devicons (lower .name)) (lower .name) "terminal_badge") }}
-                    <li class="list-inline-item">
-                      <i class="devicons devicons-{{ $devicon }}"></i>
+                    {{ $name = .name }}
+                {{ else }}
+                  {{ $name = . }}
+                {{ end }}
+                {{ if isset . "devicon" }}
+                    {{ $iconclass = printf "devicon-%s-plain devicon-%-original" ( lower .devicon ) (lower .devicon ) }}
+                {{ else }}
+                    {{ $iconclass = printf "devicon-%s-plain devicon-%-original" ( lower $name ) (lower $name ) }}
+                {{ end }}
+                <li class="list-inline-item">
+                      <i class="{{ $iconclass }}"></i>
                       {{if isset . "link"}}
-                          <a href="{{.link}}">{{ .name }}</a>
+                          <a href="{{.link}}">{{$name}}</a>
                       {{ else }}
-                          {{ .name }}
+                          {{ $name }}
                       {{ end }}
                     </li>
-                {{ else }}
-                  <li class="list-inline-item">
-                    <i class="devicons devicons-{{ cond (in $data.devicons (lower .)) (lower .) "terminal_badge" }}"></i>
-                    {{ . }}
-                  </li>
-                {{ end }}
             {{ end }}
             </ul>
     {{ end }}
