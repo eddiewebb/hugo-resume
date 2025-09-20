@@ -56,13 +56,13 @@ Data files are used for simple content presented on the homepage.
 
 ### Projects
 Initially projects were in their own JSON file too, but I decided I wanted to allow more detail and custom formatting.
-Projects are added to one of 2 subfolders of `creations` or `contributions`. The difference indicates your role as originator or colaborator.   Use `hugo add projects/TYPE/name-of-project.md` to leverage the proper archetype.
+Projects are added to one of 2 subfolders of `creations` or `contributions`. The difference indicates your role as originator or collaborator.   Use `hugo add projects/TYPE/name-of-project.md` to leverage the proper archetype.
 
 ### Publications
 Similar to projects, create them under `publications`. Include any papers, speaking engagements, articles, etc.
 
 ### Blog / Posts
-Similar to posts, create them under `blog`. Include any thoughts, musiings, etc.
+Similar to posts, create them under `blog`. Include any thoughts, musings, etc.
 **This template does not support a `posts` folder**
 
 ### Template params
