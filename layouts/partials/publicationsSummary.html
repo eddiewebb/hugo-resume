@@ -7,6 +7,6 @@
   </div>
   <div class="resume-date text-md-right">
     <span class="text-primary">{{ .Params.date | dateFormat "January 2006" }}</span>
-    <img src="{{ .Params.image }}" style="max-width:250px;padding:5px;"/>
+    <img src="{{ .Params.image }}" {{if .Params.imageDescription }}alt="{{ .Params.imageDescription }}"{{ else }}alt=""{{ end }} style="max-width:250px;padding:5px;"/>
   </div>
 </div>
