@@ -21,7 +21,16 @@ showBoards  = true
 showCertifications = true
 showSocializations = true
 sections = ["skills","publications","creations","contributions","experience","education","blog"]
-
+vcardfields = [
+    "name",
+    "image",
+    "org",
+    "email",
+    "workemail",
+    "phone",
+    "url",
+    "title"
+]
 
 [params.google]
 
@@ -56,3 +65,15 @@ home = ["HTML", "JSON"]
 
 [taxonomies]
 tag = "tags"
+
+
+[mediaTypes]
+  [mediaTypes."text/vcard"]
+    suffixes = ["vcf"]
+
+[outputFormats]
+  [outputFormats.VCard]
+    mediaType = "text/vcard"
+    baseName = "contact"
+    isPlainText = true
+    notAlternative = true
