@@ -36,7 +36,7 @@
           {{ if .Site.Params.showCertifications }}
           <h3 class="mt-3">{{ i18n "certifications" }}</h3>
           <ul class="list-inline list-social-icons mb-0">
-            {{ range .Site.Data.certifications }}
+            {{ range hugo.Data.certifications }}
                 <li class="list-inline-item">
                   <a href="{{ .proof }}" data-toggle="tooltip" title="{{ .name }}" data-offset="0 10" rel="me">
                     <img src="{{ .badge }}" width=75 />
@@ -48,7 +48,7 @@
           {{ if .Site.Params.showBoards }}
           <h3 class="mt-3 mb-0">{{ i18n "boards" }}</h3>
           <ul class="list-inline list-social-icons mb-0 mt-0">
-            {{ range .Site.Data.boards }}
+            {{ range hugo.Data.boards }}
                 <li class="list-inline-item mt-0">
                   <div class="mt-0 text-center" data-toggle="tooltip" title="{{ .description }}" data-offset="-30 -30">
                     <a href="{{ .url }}" rel="external">

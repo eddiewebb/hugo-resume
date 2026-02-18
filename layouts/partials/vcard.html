@@ -19,7 +19,7 @@ EMAIL;TYPE=INTERNET,WORK:{{ .Param "workemail" }}
 PHOTO;TYPE=JPG;VALUE=URI:{{ .Site.BaseURL }}{{ .Site.Params.profileImage }}
 {{ end }}
 {{ if in $fields "org" }}
-ORG:{{ range first 1 .Site.Data.experience }}{{ .company }}{{ end }}
+ORG:{{ range first 1 hugo.Data.experience }}{{ .company }}{{ end }}
 {{ end }}
 {{ if in $fields "title" }}
 TITLE:{{ .Site.Params.contactNote }}
